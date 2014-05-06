@@ -1,0 +1,12 @@
+
+--This line, and those below, will be ignored--
+
+A    findgammac.sh
+A    findcgamma.sh
+AM   svm.xml
+AM   vocabulary.xml
+M    TestScene.cpp
+A    3fold.sh
+AM   create_csv.sh
+M    docs/report.tex
+M    Training.cpp

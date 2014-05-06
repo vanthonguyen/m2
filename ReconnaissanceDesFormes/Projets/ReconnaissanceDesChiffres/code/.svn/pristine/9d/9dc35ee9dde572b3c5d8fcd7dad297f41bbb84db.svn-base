@@ -1,0 +1,97 @@
+\relax 
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\@writefile{toc}{\beamer@endinputifotherversion {3.18pt}}
+\@writefile{nav}{\beamer@endinputifotherversion {3.18pt}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {1}{1}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {2}{2}}}
+\@writefile{toc}{\beamer@sectionintoc {1}{Rappelle du sujet}{3}{0}{1}}
+\@writefile{nav}{\headcommand {\sectionentry {1}{Rappelle du sujet}{3}{Rappelle du sujet}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {1}{2}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {1}{2}}}
+\@writefile{toc}{\beamer@subsectionintoc {1}{1}{Visualisation du graphe}{3}{0}{1}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Visualisation du graphe}}\headcommand {\beamer@subsectionpages {3}{2}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{1}{1}{3/3}{Visualisation du graphe}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {3}{3}}}
+\newlabel{overflow}{{2}{4}{Visualisation du graphe\relax }{Doc-Start}{}}
+\@writefile{snm}{\beamer@slide {overflow}{4}}
+\@writefile{nav}{\headcommand {\slideentry {1}{1}{2}{4/4}{Visualisation du graphe}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {4}{4}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{1}{3}{5/5}{Visualisation du graphe}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {5}{5}}}
+\@writefile{toc}{\beamer@subsectionintoc {1}{2}{Simplification du graphe}{6}{0}{1}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{1}{2}{6}{Simplification du graphe}}\headcommand {\beamer@subsectionpages {3}{5}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{2}{1}{6/6}{Simplification du graphe}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {6}{6}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{2}{2}{7/7}{Simplification du graphe}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {7}{7}}}
+\@writefile{toc}{\beamer@sectionintoc {2}{Visualisation du graphe}{8}{0}{2}}
+\@writefile{nav}{\headcommand {\sectionentry {2}{Visualisation du graphe}{8}{Visualisation du graphe}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {3}{7}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {6}{7}}}
+\@writefile{toc}{\beamer@subsectionintoc {2}{1}{Graphe statique}{8}{0}{2}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{Graphe statique}}\headcommand {\beamer@subsectionpages {8}{7}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{1}{8/8}{Graphe statique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {8}{8}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{2}{9/9}{Graphe statique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {9}{9}}}
+\newlabel{overflow}{{10}{10}{Graphe statique\relax }{Doc-Start}{}}
+\@writefile{snm}{\beamer@slide {overflow}{10}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{3}{10/10}{Graphe statique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {10}{10}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{4}{11/11}{Graphe statique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {11}{11}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{5}{12/12}{Graphe statique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {12}{12}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{6}{13/13}{Graphe statique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {13}{13}}}
+\newlabel{overflow}{{14}{14}{Graphe statique\relax }{Doc-Start}{}}
+\@writefile{snm}{\beamer@slide {overflow}{14}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{7}{14/14}{Graphe statique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {14}{14}}}
+\newlabel{overflow}{{15}{15}{Graphe statique\relax }{Doc-Start}{}}
+\@writefile{snm}{\beamer@slide {overflow}{15}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{8}{15/15}{Graphe statique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {15}{15}}}
+\@writefile{toc}{\beamer@subsectionintoc {2}{2}{Graphe dynamique}{16}{0}{2}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{2}{2}{16}{Graphe dynamique}}\headcommand {\beamer@subsectionpages {8}{15}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{1}{16/16}{Graphe dynamique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {16}{16}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{2}{17/17}{Graphe dynamique}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {17}{17}}}
+\@writefile{toc}{\beamer@sectionintoc {3}{Simplification du graphe}{18}{0}{3}}
+\@writefile{nav}{\headcommand {\sectionentry {3}{Simplification du graphe}{18}{Simplification du graphe}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {8}{17}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {16}{17}}}
+\@writefile{nav}{\headcommand {\sectionentry {4}{Conclusion}{18}{Conclusion}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {18}{17}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {18}{17}}}
+\@writefile{nav}{\headcommand {\slideentry {4}{0}{3}{18/18}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {18}{18}}}
+\bibcite{Author1990}{\hyperlink {beamerbibAuthor1990}{1}}
+\bibcite{Someone2000}{\hyperlink {beamerbibSomeone2000}{2}}
+\@writefile{nav}{\headcommand {\sectionentry {5}{R\IeC {\'e}f\IeC {\'e}rences}{19}{R\IeC {\'e}f\IeC {\'e}rences}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {18}{18}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {18}{18}}}
+\@writefile{nav}{\headcommand {\slideentry {5}{0}{4}{19/19}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {19}{19}}}
+\@writefile{nav}{\headcommand {\beamer@partpages {1}{19}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {19}{19}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {19}{19}}}
+\@writefile{nav}{\headcommand {\beamer@documentpages {19}}}
+\@writefile{nav}{\headcommand {\def \inserttotalframenumber {19}}}

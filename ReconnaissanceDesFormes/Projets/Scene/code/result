@@ -1,0 +1,121 @@
+
+-------------10-0.005-------------
+./training learning_3_0 vocabulary.xml svm.xml 10 0.005
+10
+0.005
+Begin clustering ...
+Clustered in 151.73s
+ERR rate 0.696154
+./training learning_3_1 vocabulary.xml svm.xml 10 0.005
+10
+0.005
+Begin clustering ...
+Clustered in 166.779s
+ERR rate 0.673077
+./training learning_3_2 vocabulary.xml svm.xml 10 0.005
+10
+0.005
+Begin clustering ...
+Clustered in 175.16s
+ERR rate 0.7
+-------------10-0.05-------------
+./training learning_3_0 vocabulary.xml svm.xml 10 0.05
+10
+0.05
+Begin clustering ...
+Clustered in 165.101s
+ERR rate 0.692308
+./training learning_3_1 vocabulary.xml svm.xml 10 0.05
+10
+0.05
+Begin clustering ...
+Clustered in 181.29s
+ERR rate 0.673077
+./training learning_3_2 vocabulary.xml svm.xml 10 0.05
+10
+0.05
+Begin clustering ...
+Clustered in 181.247s
+ERR rate 0.696154
+-------------10-0.1-------------
+./training learning_3_0 vocabulary.xml svm.xml 10 0.1
+10
+0.1
+Begin clustering ...
+Clustered in 184.603s
+ERR rate 0.692308
+./training learning_3_1 vocabulary.xml svm.xml 10 0.1
+10
+0.1
+Begin clustering ...
+Clustered in 185.532s
+ERR rate 0.673077
+./training learning_3_2 vocabulary.xml svm.xml 10 0.1
+10
+0.1
+Begin clustering ...
+Clustered in 188.177s
+ERR rate 0.696154
+-------------10-0.5-------------
+./training learning_3_0 vocabulary.xml svm.xml 10 0.5
+10
+0.5
+Begin clustering ...
+Clustered in 150.197s
+ERR rate 0.692308
+./training learning_3_1 vocabulary.xml svm.xml 10 0.5
+10
+0.5
+Begin clustering ...
+Clustered in 165.45s
+ERR rate 0.673077
+./training learning_3_2 vocabulary.xml svm.xml 10 0.5
+10
+0.5
+Begin clustering ...
+Clustered in 168.847s
+ERR rate 0.696154
+-------------10-2.0-------------
+./training learning_3_0 vocabulary.xml svm.xml 10 2.0
+10
+2
+Begin clustering ...
+Clustered in 154.896s
+ERR rate 0.692308
+./training learning_3_1 vocabulary.xml svm.xml 10 2.0
+10
+2
+Begin clustering ...
+Clustered in 155.802s
+ERR rate 0.665385
+./training learning_3_2 vocabulary.xml svm.xml 10 2.0
+10
+2
+Begin clustering ...
+Clustered in 169.602s
+ERR rate 0.692308
+-------------100-0.005-------------
+./training learning_3_0 vocabulary.xml svm.xml 100 0.005
+100
+0.005
+Begin clustering ...
+Clustered in 174.108s
+ERR rate 0.696154
+./training learning_3_1 vocabulary.xml svm.xml 100 0.005
+100
+0.005
+Begin clustering ...
+Clustered in 166.392s
+ERR rate 0.673077
+./training learning_3_2 vocabulary.xml svm.xml 100 0.005
+100
+0.005
+Begin clustering ...
+Clustered in 163.975s
+ERR rate 0.7
+-------------100-0.05-------------
+./training learning_3_0 vocabulary.xml svm.xml 100 0.05
+100
+0.05
+Begin clustering ...
+ERR rate 0.603846

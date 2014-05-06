@@ -1,0 +1,13 @@
+CFLAGS = `pkg-config --cflags opencv` -Wall -g -std=c++11
+LDFLAGS = `pkg-config --libs opencv`
+CC = g++
+OBJ = control.o channel.o main.o IO.o
+OBJ2 = training.o IO.o channel.o
+%.o: %.cpp 
+	$(CC) -c -o $@ $< $(CFLAGS)
+cbir:  $(OBJ) 
+	$(CC) -o $@ $^ $(LDFLAGS)
+training: $(OBJ2)
+	$(CC) -o $@ $^ $(LDFLAGS)
+clean:
+	rm -f *.o cbir training *~

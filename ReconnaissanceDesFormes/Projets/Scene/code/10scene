@@ -1,0 +1,2843 @@
+./training learning_3_0 vocabulary.xml svm.xml 300 0.5 1000
+Dic
+1000
+#####
+[1 x 1043]
+1043
+2071821692
+-2137936704
+#####
+0
+1
+2
+3
+4
+Image name = ../db/CALsuburb/image_0186.jpg / Predicted class = 1 / Actual class = 16175520.
+5
+6
+Image name = ../db/CALsuburb/image_0238.jpg / Predicted class = 1 / Actual class = 16175520.
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+Image name = ../db/CALsuburb/image_0145.jpg / Predicted class = 1 / Actual class = 16175520.
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+Image name = ../db/CALsuburb/image_0209.jpg / Predicted class = 1 / Actual class = 16175520.
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+Image name = ../db/MITcoast/image_0018.jpg / Predicted class = 2 / Actual class = 16175520.
+82
+Image name = ../db/MITcoast/image_0257.jpg / Predicted class = 2 / Actual class = 16175520.
+83
+84
+Image name = ../db/MITcoast/image_0033.jpg / Predicted class = 2 / Actual class = 16175520.
+85
+Image name = ../db/MITcoast/image_0087.jpg / Predicted class = 2 / Actual class = 16175520.
+86
+Image name = ../db/MITcoast/image_0108.jpg / Predicted class = 2 / Actual class = 16175520.
+87
+Image name = ../db/MITcoast/image_0038.jpg / Predicted class = 2 / Actual class = 16175520.
+88
+Image name = ../db/MITcoast/image_0101.jpg / Predicted class = 2 / Actual class = 16175520.
+89
+90
+91
+92
+93
+Image name = ../db/MITcoast/image_0148.jpg / Predicted class = 2 / Actual class = 16175520.
+94
+95
+96
+97
+98
+99
+Image name = ../db/MITcoast/image_0010.jpg / Predicted class = 2 / Actual class = 16175520.
+100
+101
+Image name = ../db/MITcoast/image_0319.jpg / Predicted class = 2 / Actual class = 16175520.
+102
+103
+Image name = ../db/MITcoast/image_0137.jpg / Predicted class = 2 / Actual class = 16175520.
+104
+105
+Image name = ../db/MITcoast/image_0318.jpg / Predicted class = 2 / Actual class = 16175520.
+106
+Image name = ../db/MITcoast/image_0107.jpg / Predicted class = 2 / Actual class = 16175520.
+107
+108
+109
+110
+111
+112
+Image name = ../db/MITcoast/image_0278.jpg / Predicted class = 2 / Actual class = 16175520.
+113
+114
+115
+116
+117
+Image name = ../db/MITcoast/image_0002.jpg / Predicted class = 2 / Actual class = 16175520.
+118
+Image name = ../db/MITcoast/image_0215.jpg / Predicted class = 2 / Actual class = 16175520.
+119
+120
+Image name = ../db/MITcoast/image_0308.jpg / Predicted class = 2 / Actual class = 16175520.
+121
+Image name = ../db/MITcoast/image_0080.jpg / Predicted class = 2 / Actual class = 16175520.
+122
+123
+Image name = ../db/MITcoast/image_0232.jpg / Predicted class = 2 / Actual class = 16175520.
+124
+125
+126
+127
+128
+129
+Image name = ../db/MITcoast/image_0190.jpg / Predicted class = 2 / Actual class = 16175520.
+130
+131
+Image name = ../db/MITcoast/image_0291.jpg / Predicted class = 2 / Actual class = 16175520.
+132
+133
+134
+135
+136
+Image name = ../db/MITcoast/image_0279.jpg / Predicted class = 2 / Actual class = 16175520.
+137
+Image name = ../db/MITcoast/image_0083.jpg / Predicted class = 2 / Actual class = 16175520.
+138
+139
+Image name = ../db/MITcoast/image_0255.jpg / Predicted class = 2 / Actual class = 16175520.
+140
+141
+Image name = ../db/MITcoast/image_0176.jpg / Predicted class = 2 / Actual class = 16175520.
+142
+143
+Image name = ../db/MITcoast/image_0203.jpg / Predicted class = 2 / Actual class = 16175520.
+144
+145
+146
+Image name = ../db/MITcoast/image_0130.jpg / Predicted class = 2 / Actual class = 16175520.
+147
+Image name = ../db/MITcoast/image_0143.jpg / Predicted class = 2 / Actual class = 16175520.
+148
+149
+Image name = ../db/MITcoast/image_0039.jpg / Predicted class = 2 / Actual class = 16175520.
+150
+Image name = ../db/MITcoast/image_0051.jpg / Predicted class = 2 / Actual class = 16175520.
+151
+Image name = ../db/MITcoast/image_0324.jpg / Predicted class = 2 / Actual class = 16175520.
+152
+153
+Image name = ../db/MITcoast/image_0360.jpg / Predicted class = 2 / Actual class = 16175520.
+154
+155
+Image name = ../db/MITcoast/image_0288.jpg / Predicted class = 2 / Actual class = 16175520.
+156
+Image name = ../db/MITcoast/image_0072.jpg / Predicted class = 2 / Actual class = 16175520.
+157
+158
+159
+Image name = ../db/MITcoast/image_0157.jpg / Predicted class = 2 / Actual class = 16175520.
+160
+Image name = ../db/MITcoast/image_0201.jpg / Predicted class = 2 / Actual class = 16175520.
+161
+162
+163
+164
+Image name = ../db/MITcoast/image_0187.jpg / Predicted class = 2 / Actual class = 16175520.
+165
+Image name = ../db/MITcoast/image_0090.jpg / Predicted class = 2 / Actual class = 16175520.
+166
+167
+Image name = ../db/MITcoast/image_0179.jpg / Predicted class = 2 / Actual class = 16175520.
+168
+Image name = ../db/MITcoast/image_0037.jpg / Predicted class = 2 / Actual class = 16175520.
+169
+170
+Image name = ../db/MITcoast/image_0113.jpg / Predicted class = 2 / Actual class = 16175520.
+171
+172
+Image name = ../db/MITcoast/image_0014.jpg / Predicted class = 2 / Actual class = 16175520.
+173
+Image name = ../db/MITcoast/image_0044.jpg / Predicted class = 2 / Actual class = 16175520.
+174
+Image name = ../db/MITcoast/image_0338.jpg / Predicted class = 2 / Actual class = 16175520.
+175
+176
+Image name = ../db/MITcoast/image_0223.jpg / Predicted class = 2 / Actual class = 16175520.
+177
+Image name = ../db/MITcoast/image_0023.jpg / Predicted class = 2 / Actual class = 16175520.
+178
+179
+Image name = ../db/MITcoast/image_0110.jpg / Predicted class = 2 / Actual class = 16175520.
+180
+181
+182
+183
+Image name = ../db/MITcoast/image_0074.jpg / Predicted class = 2 / Actual class = 16175520.
+184
+185
+186
+Image name = ../db/MITcoast/image_0132.jpg / Predicted class = 2 / Actual class = 16175520.
+187
+188
+189
+190
+Image name = ../db/MITcoast/image_0337.jpg / Predicted class = 2 / Actual class = 16175520.
+191
+Image name = ../db/MITcoast/image_0068.jpg / Predicted class = 2 / Actual class = 16175520.
+192
+Image name = ../db/MITcoast/image_0313.jpg / Predicted class = 2 / Actual class = 16175520.
+193
+194
+195
+196
+Image name = ../db/MITcoast/image_0131.jpg / Predicted class = 2 / Actual class = 16175520.
+197
+Image name = ../db/MITcoast/image_0351.jpg / Predicted class = 2 / Actual class = 16175520.
+198
+Image name = ../db/MITcoast/image_0237.jpg / Predicted class = 2 / Actual class = 16175520.
+199
+200
+201
+202
+Image name = ../db/MITforest/image_0255.jpg / Predicted class = 3 / Actual class = 16175520.
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+Image name = ../db/MITforest/image_0184.jpg / Predicted class = 3 / Actual class = 16175520.
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+Image name = ../db/MITforest/image_0052.jpg / Predicted class = 3 / Actual class = 16175520.
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+Image name = ../db/MITforest/image_0239.jpg / Predicted class = 3 / Actual class = 16175520.
+240
+Image name = ../db/MITforest/image_0301.jpg / Predicted class = 3 / Actual class = 16175520.
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+Image name = ../db/MITforest/image_0300.jpg / Predicted class = 3 / Actual class = 16175520.
+253
+254
+255
+256
+Image name = ../db/MITforest/image_0005.jpg / Predicted class = 3 / Actual class = 16175520.
+257
+258
+259
+Image name = ../db/MITforest/image_0263.jpg / Predicted class = 3 / Actual class = 16175520.
+260
+261
+262
+263
+264
+Image name = ../db/MITforest/image_0160.jpg / Predicted class = 3 / Actual class = 16175520.
+265
+266
+267
+268
+269
+270
+271
+272
+Image name = ../db/MITforest/image_0053.jpg / Predicted class = 3 / Actual class = 16175520.
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+Image name = ../db/MITforest/image_0183.jpg / Predicted class = 3 / Actual class = 16175520.
+287
+288
+Image name = ../db/MITforest/image_0159.jpg / Predicted class = 3 / Actual class = 16175520.
+289
+290
+291
+292
+Image name = ../db/MITforest/image_0158.jpg / Predicted class = 3 / Actual class = 16175520.
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+Image name = ../db/MITforest/image_0020.jpg / Predicted class = 3 / Actual class = 16175520.
+304
+305
+306
+307
+308
+309
+310
+Image name = ../db/MIThighway/image_0247.jpg / Predicted class = 4 / Actual class = 16175520.
+311
+Image name = ../db/MIThighway/image_0230.jpg / Predicted class = 4 / Actual class = 16175520.
+312
+313
+Image name = ../db/MIThighway/image_0021.jpg / Predicted class = 4 / Actual class = 16175520.
+314
+Image name = ../db/MIThighway/image_0046.jpg / Predicted class = 4 / Actual class = 16175520.
+315
+Image name = ../db/MIThighway/image_0213.jpg / Predicted class = 4 / Actual class = 16175520.
+316
+Image name = ../db/MIThighway/image_0229.jpg / Predicted class = 4 / Actual class = 16175520.
+317
+Image name = ../db/MIThighway/image_0034.jpg / Predicted class = 4 / Actual class = 16175520.
+318
+319
+Image name = ../db/MIThighway/image_0004.jpg / Predicted class = 4 / Actual class = 16175520.
+320
+321
+Image name = ../db/MIThighway/image_0052.jpg / Predicted class = 4 / Actual class = 16175520.
+322
+323
+Image name = ../db/MIThighway/image_0133.jpg / Predicted class = 4 / Actual class = 16175520.
+324
+325
+326
+327
+Image name = ../db/MIThighway/image_0129.jpg / Predicted class = 4 / Actual class = 16175520.
+328
+329
+330
+331
+Image name = ../db/MIThighway/image_0029.jpg / Predicted class = 4 / Actual class = 16175520.
+332
+Image name = ../db/MIThighway/image_0260.jpg / Predicted class = 4 / Actual class = 16175520.
+333
+334
+Image name = ../db/MIThighway/image_0255.jpg / Predicted class = 4 / Actual class = 16175520.
+335
+Image name = ../db/MIThighway/image_0181.jpg / Predicted class = 4 / Actual class = 16175520.
+336
+337
+Image name = ../db/MIThighway/image_0240.jpg / Predicted class = 4 / Actual class = 16175520.
+338
+Image name = ../db/MIThighway/image_0023.jpg / Predicted class = 4 / Actual class = 16175520.
+339
+Image name = ../db/MIThighway/image_0157.jpg / Predicted class = 4 / Actual class = 16175520.
+340
+341
+Image name = ../db/MIThighway/image_0159.jpg / Predicted class = 4 / Actual class = 16175520.
+342
+343
+Image name = ../db/MIThighway/image_0008.jpg / Predicted class = 4 / Actual class = 16175520.
+344
+Image name = ../db/MIThighway/image_0127.jpg / Predicted class = 4 / Actual class = 16175520.
+345
+346
+347
+Image name = ../db/MIThighway/image_0005.jpg / Predicted class = 4 / Actual class = 16175520.
+348
+Image name = ../db/MIThighway/image_0032.jpg / Predicted class = 4 / Actual class = 16175520.
+349
+350
+Image name = ../db/MIThighway/image_0177.jpg / Predicted class = 4 / Actual class = 16175520.
+351
+352
+353
+354
+355
+Image name = ../db/MIThighway/image_0215.jpg / Predicted class = 4 / Actual class = 16175520.
+356
+Image name = ../db/MIThighway/image_0170.jpg / Predicted class = 4 / Actual class = 16175520.
+357
+358
+Image name = ../db/MIThighway/image_0070.jpg / Predicted class = 4 / Actual class = 16175520.
+359
+Image name = ../db/MIThighway/image_0188.jpg / Predicted class = 4 / Actual class = 16175520.
+360
+Image name = ../db/MIThighway/image_0019.jpg / Predicted class = 4 / Actual class = 16175520.
+361
+Image name = ../db/MIThighway/image_0232.jpg / Predicted class = 4 / Actual class = 16175520.
+362
+363
+Image name = ../db/MIThighway/image_0024.jpg / Predicted class = 4 / Actual class = 16175520.
+364
+365
+Image name = ../db/MIThighway/image_0093.jpg / Predicted class = 4 / Actual class = 16175520.
+366
+Image name = ../db/MIThighway/image_0259.jpg / Predicted class = 4 / Actual class = 16175520.
+367
+368
+Image name = ../db/MIThighway/image_0186.jpg / Predicted class = 4 / Actual class = 16175520.
+369
+Image name = ../db/MIThighway/image_0237.jpg / Predicted class = 4 / Actual class = 16175520.
+370
+Image name = ../db/MIThighway/image_0030.jpg / Predicted class = 4 / Actual class = 16175520.
+371
+Image name = ../db/MIThighway/image_0216.jpg / Predicted class = 4 / Actual class = 16175520.
+372
+373
+Image name = ../db/MIThighway/image_0092.jpg / Predicted class = 4 / Actual class = 16175520.
+374
+Image name = ../db/MIThighway/image_0248.jpg / Predicted class = 4 / Actual class = 16175520.
+375
+376
+377
+378
+379
+Image name = ../db/MIThighway/image_0101.jpg / Predicted class = 4 / Actual class = 16175520.
+380
+Image name = ../db/MIThighway/image_0130.jpg / Predicted class = 4 / Actual class = 16175520.
+381
+Image name = ../db/MIThighway/image_0202.jpg / Predicted class = 4 / Actual class = 16175520.
+382
+Image name = ../db/MIThighway/image_0206.jpg / Predicted class = 4 / Actual class = 16175520.
+383
+384
+385
+386
+Image name = ../db/MIThighway/image_0028.jpg / Predicted class = 4 / Actual class = 16175520.
+387
+388
+Image name = ../db/MIThighway/image_0040.jpg / Predicted class = 4 / Actual class = 16175520.
+389
+390
+Image name = ../db/MIThighway/image_0037.jpg / Predicted class = 4 / Actual class = 16175520.
+391
+392
+393
+394
+Image name = ../db/MIThighway/image_0001.jpg / Predicted class = 4 / Actual class = 16175520.
+395
+396
+397
+Image name = ../db/MITinsidecity/image_0202.jpg / Predicted class = 5 / Actual class = 16175520.
+398
+399
+400
+401
+Image name = ../db/MITinsidecity/image_0057.jpg / Predicted class = 5 / Actual class = 16175520.
+402
+403
+404
+405
+Image name = ../db/MITinsidecity/image_0043.jpg / Predicted class = 5 / Actual class = 16175520.
+406
+Image name = ../db/MITinsidecity/image_0193.jpg / Predicted class = 5 / Actual class = 16175520.
+407
+408
+Image name = ../db/MITinsidecity/image_0295.jpg / Predicted class = 5 / Actual class = 16175520.
+409
+410
+411
+412
+413
+414
+415
+416
+Image name = ../db/MITinsidecity/image_0083.jpg / Predicted class = 5 / Actual class = 16175520.
+417
+Image name = ../db/MITinsidecity/image_0049.jpg / Predicted class = 5 / Actual class = 16175520.
+418
+419
+Image name = ../db/MITinsidecity/image_0199.jpg / Predicted class = 5 / Actual class = 16175520.
+420
+421
+422
+Image name = ../db/MITinsidecity/image_0121.jpg / Predicted class = 5 / Actual class = 16175520.
+423
+424
+425
+Image name = ../db/MITinsidecity/image_0137.jpg / Predicted class = 5 / Actual class = 16175520.
+426
+427
+428
+Image name = ../db/MITinsidecity/image_0063.jpg / Predicted class = 5 / Actual class = 16175520.
+429
+430
+431
+Image name = ../db/MITinsidecity/image_0081.jpg / Predicted class = 5 / Actual class = 16175520.
+432
+433
+Image name = ../db/MITinsidecity/image_0128.jpg / Predicted class = 5 / Actual class = 16175520.
+434
+Image name = ../db/MITinsidecity/image_0016.jpg / Predicted class = 5 / Actual class = 16175520.
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+Image name = ../db/MITinsidecity/image_0068.jpg / Predicted class = 5 / Actual class = 16175520.
+450
+451
+452
+453
+Image name = ../db/MITinsidecity/image_0079.jpg / Predicted class = 5 / Actual class = 16175520.
+454
+Image name = ../db/MITinsidecity/image_0306.jpg / Predicted class = 5 / Actual class = 16175520.
+455
+Image name = ../db/MITinsidecity/image_0289.jpg / Predicted class = 5 / Actual class = 16175520.
+456
+457
+458
+459
+460
+461
+Image name = ../db/MITinsidecity/image_0239.jpg / Predicted class = 5 / Actual class = 16175520.
+462
+463
+464
+465
+466
+Image name = ../db/MITinsidecity/image_0148.jpg / Predicted class = 5 / Actual class = 16175520.
+467
+468
+469
+470
+Image name = ../db/MITinsidecity/image_0075.jpg / Predicted class = 5 / Actual class = 16175520.
+471
+472
+Image name = ../db/MITinsidecity/image_0299.jpg / Predicted class = 5 / Actual class = 16175520.
+473
+474
+Image name = ../db/MITinsidecity/image_0160.jpg / Predicted class = 5 / Actual class = 16175520.
+475
+476
+477
+478
+479
+Image name = ../db/MITinsidecity/image_0087.jpg / Predicted class = 5 / Actual class = 16175520.
+480
+481
+Image name = ../db/MITinsidecity/image_0268.jpg / Predicted class = 5 / Actual class = 16175520.
+482
+Image name = ../db/MITinsidecity/image_0124.jpg / Predicted class = 5 / Actual class = 16175520.
+483
+484
+Image name = ../db/MITinsidecity/image_0141.jpg / Predicted class = 5 / Actual class = 16175520.
+485
+486
+487
+488
+489
+490
+491
+Image name = ../db/MITinsidecity/image_0122.jpg / Predicted class = 5 / Actual class = 16175520.
+492
+Image name = ../db/MITinsidecity/image_0276.jpg / Predicted class = 5 / Actual class = 16175520.
+493
+Image name = ../db/MITinsidecity/image_0133.jpg / Predicted class = 5 / Actual class = 16175520.
+494
+Image name = ../db/MITinsidecity/image_0028.jpg / Predicted class = 5 / Actual class = 16175520.
+495
+496
+497
+498
+499
+Image name = ../db/MITmountain/image_0370.jpg / Predicted class = 6 / Actual class = 16175520.
+500
+501
+502
+Image name = ../db/MITmountain/image_0034.jpg / Predicted class = 6 / Actual class = 16175520.
+503
+Image name = ../db/MITmountain/image_0189.jpg / Predicted class = 6 / Actual class = 16175520.
+504
+505
+506
+Image name = ../db/MITmountain/image_0225.jpg / Predicted class = 6 / Actual class = 16175520.
+507
+508
+Image name = ../db/MITmountain/image_0082.jpg / Predicted class = 6 / Actual class = 16175520.
+509
+510
+511
+512
+Image name = ../db/MITmountain/image_0327.jpg / Predicted class = 6 / Actual class = 16175520.
+513
+Image name = ../db/MITmountain/image_0151.jpg / Predicted class = 6 / Actual class = 16175520.
+514
+515
+Image name = ../db/MITmountain/image_0134.jpg / Predicted class = 6 / Actual class = 16175520.
+516
+517
+518
+519
+520
+521
+522
+Image name = ../db/MITmountain/image_0132.jpg / Predicted class = 6 / Actual class = 16175520.
+523
+524
+Image name = ../db/MITmountain/image_0372.jpg / Predicted class = 6 / Actual class = 16175520.
+525
+526
+Image name = ../db/MITmountain/image_0329.jpg / Predicted class = 6 / Actual class = 16175520.
+527
+528
+529
+Image name = ../db/MITmountain/image_0145.jpg / Predicted class = 6 / Actual class = 16175520.
+530
+Image name = ../db/MITmountain/image_0245.jpg / Predicted class = 6 / Actual class = 16175520.
+531
+532
+Image name = ../db/MITmountain/image_0030.jpg / Predicted class = 6 / Actual class = 16175520.
+533
+534
+535
+536
+537
+538
+539
+Image name = ../db/MITmountain/image_0177.jpg / Predicted class = 6 / Actual class = 16175520.
+540
+541
+542
+543
+Image name = ../db/MITmountain/image_0195.jpg / Predicted class = 6 / Actual class = 16175520.
+544
+Image name = ../db/MITmountain/image_0333.jpg / Predicted class = 6 / Actual class = 16175520.
+545
+546
+547
+Image name = ../db/MITmountain/image_0037.jpg / Predicted class = 6 / Actual class = 16175520.
+548
+549
+Image name = ../db/MITmountain/image_0300.jpg / Predicted class = 6 / Actual class = 16175520.
+550
+Image name = ../db/MITmountain/image_0126.jpg / Predicted class = 6 / Actual class = 16175520.
+551
+Image name = ../db/MITmountain/image_0158.jpg / Predicted class = 6 / Actual class = 16175520.
+552
+Image name = ../db/MITmountain/image_0136.jpg / Predicted class = 6 / Actual class = 16175520.
+553
+554
+Image name = ../db/MITmountain/image_0260.jpg / Predicted class = 6 / Actual class = 16175520.
+555
+556
+557
+Image name = ../db/MITmountain/image_0083.jpg / Predicted class = 6 / Actual class = 16175520.
+558
+559
+560
+561
+562
+563
+564
+565
+566
+Image name = ../db/MITmountain/image_0209.jpg / Predicted class = 6 / Actual class = 16175520.
+567
+Image name = ../db/MITmountain/image_0298.jpg / Predicted class = 6 / Actual class = 16175520.
+568
+Image name = ../db/MITmountain/image_0100.jpg / Predicted class = 6 / Actual class = 16175520.
+569
+Image name = ../db/MITmountain/image_0239.jpg / Predicted class = 6 / Actual class = 16175520.
+570
+571
+Image name = ../db/MITmountain/image_0194.jpg / Predicted class = 6 / Actual class = 16175520.
+572
+Image name = ../db/MITmountain/image_0190.jpg / Predicted class = 6 / Actual class = 16175520.
+573
+574
+Image name = ../db/MITmountain/image_0364.jpg / Predicted class = 6 / Actual class = 16175520.
+575
+576
+577
+578
+Image name = ../db/MITmountain/image_0201.jpg / Predicted class = 6 / Actual class = 16175520.
+579
+580
+Image name = ../db/MITmountain/image_0087.jpg / Predicted class = 6 / Actual class = 16175520.
+581
+582
+583
+584
+585
+Image name = ../db/MITmountain/image_0307.jpg / Predicted class = 6 / Actual class = 16175520.
+586
+587
+588
+Image name = ../db/MITmountain/image_0147.jpg / Predicted class = 6 / Actual class = 16175520.
+589
+590
+591
+Image name = ../db/MITmountain/image_0123.jpg / Predicted class = 6 / Actual class = 16175520.
+592
+593
+Image name = ../db/MITmountain/image_0356.jpg / Predicted class = 6 / Actual class = 16175520.
+594
+595
+596
+597
+Image name = ../db/MITmountain/image_0075.jpg / Predicted class = 6 / Actual class = 16175520.
+598
+599
+Image name = ../db/MITmountain/image_0004.jpg / Predicted class = 6 / Actual class = 16175520.
+600
+601
+602
+603
+Image name = ../db/MITmountain/image_0045.jpg / Predicted class = 6 / Actual class = 16175520.
+604
+605
+606
+Image name = ../db/MITmountain/image_0175.jpg / Predicted class = 6 / Actual class = 16175520.
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616
+617
+Image name = ../db/MITmountain/image_0035.jpg / Predicted class = 6 / Actual class = 16175520.
+618
+619
+620
+Image name = ../db/MITmountain/image_0042.jpg / Predicted class = 6 / Actual class = 16175520.
+621
+622
+Image name = ../db/MITopencountry/image_0344.jpg / Predicted class = 7 / Actual class = 16175520.
+623
+624
+Image name = ../db/MITopencountry/image_0330.jpg / Predicted class = 7 / Actual class = 16175520.
+625
+Image name = ../db/MITopencountry/image_0182.jpg / Predicted class = 7 / Actual class = 16175520.
+626
+627
+Image name = ../db/MITopencountry/image_0393.jpg / Predicted class = 7 / Actual class = 16175520.
+628
+Image name = ../db/MITopencountry/image_0381.jpg / Predicted class = 7 / Actual class = 16175520.
+629
+630
+631
+Image name = ../db/MITopencountry/image_0350.jpg / Predicted class = 7 / Actual class = 16175520.
+632
+Image name = ../db/MITopencountry/image_0123.jpg / Predicted class = 7 / Actual class = 16175520.
+633
+634
+Image name = ../db/MITopencountry/image_0357.jpg / Predicted class = 7 / Actual class = 16175520.
+635
+636
+637
+638
+639
+Image name = ../db/MITopencountry/image_0298.jpg / Predicted class = 7 / Actual class = 16175520.
+640
+641
+Image name = ../db/MITopencountry/image_0160.jpg / Predicted class = 7 / Actual class = 16175520.
+642
+Image name = ../db/MITopencountry/image_0304.jpg / Predicted class = 7 / Actual class = 16175520.
+643
+Image name = ../db/MITopencountry/image_0120.jpg / Predicted class = 7 / Actual class = 16175520.
+644
+645
+Image name = ../db/MITopencountry/image_0324.jpg / Predicted class = 7 / Actual class = 16175520.
+646
+647
+648
+Image name = ../db/MITopencountry/image_0117.jpg / Predicted class = 7 / Actual class = 16175520.
+649
+Image name = ../db/MITopencountry/image_0299.jpg / Predicted class = 7 / Actual class = 16175520.
+650
+651
+652
+653
+654
+Image name = ../db/MITopencountry/image_0316.jpg / Predicted class = 7 / Actual class = 16175520.
+655
+Image name = ../db/MITopencountry/image_0325.jpg / Predicted class = 7 / Actual class = 16175520.
+656
+Image name = ../db/MITopencountry/image_0141.jpg / Predicted class = 7 / Actual class = 16175520.
+657
+Image name = ../db/MITopencountry/image_0353.jpg / Predicted class = 7 / Actual class = 16175520.
+658
+659
+Image name = ../db/MITopencountry/image_0328.jpg / Predicted class = 7 / Actual class = 16175520.
+660
+661
+Image name = ../db/MITopencountry/image_0140.jpg / Predicted class = 7 / Actual class = 16175520.
+662
+663
+Image name = ../db/MITopencountry/image_0083.jpg / Predicted class = 7 / Actual class = 16175520.
+664
+Image name = ../db/MITopencountry/image_0409.jpg / Predicted class = 7 / Actual class = 16175520.
+665
+666
+667
+Image name = ../db/MITopencountry/image_0165.jpg / Predicted class = 7 / Actual class = 16175520.
+668
+669
+670
+Image name = ../db/MITopencountry/image_0146.jpg / Predicted class = 7 / Actual class = 16175520.
+671
+Image name = ../db/MITopencountry/image_0062.jpg / Predicted class = 7 / Actual class = 16175520.
+672
+Image name = ../db/MITopencountry/image_0371.jpg / Predicted class = 7 / Actual class = 16175520.
+673
+Image name = ../db/MITopencountry/image_0075.jpg / Predicted class = 7 / Actual class = 16175520.
+674
+Image name = ../db/MITopencountry/image_0048.jpg / Predicted class = 7 / Actual class = 16175520.
+675
+676
+677
+Image name = ../db/MITopencountry/image_0347.jpg / Predicted class = 7 / Actual class = 16175520.
+678
+Image name = ../db/MITopencountry/image_0071.jpg / Predicted class = 7 / Actual class = 16175520.
+679
+680
+681
+Image name = ../db/MITopencountry/image_0362.jpg / Predicted class = 7 / Actual class = 16175520.
+682
+Image name = ../db/MITopencountry/image_0238.jpg / Predicted class = 7 / Actual class = 16175520.
+683
+684
+685
+Image name = ../db/MITopencountry/image_0240.jpg / Predicted class = 7 / Actual class = 16175520.
+686
+687
+688
+689
+Image name = ../db/MITopencountry/image_0145.jpg / Predicted class = 7 / Actual class = 16175520.
+690
+691
+Image name = ../db/MITopencountry/image_0112.jpg / Predicted class = 7 / Actual class = 16175520.
+692
+Image name = ../db/MITopencountry/image_0275.jpg / Predicted class = 7 / Actual class = 16175520.
+693
+Image name = ../db/MITopencountry/image_0031.jpg / Predicted class = 7 / Actual class = 16175520.
+694
+695
+Image name = ../db/MITopencountry/image_0035.jpg / Predicted class = 7 / Actual class = 16175520.
+696
+Image name = ../db/MITopencountry/image_0102.jpg / Predicted class = 7 / Actual class = 16175520.
+697
+698
+Image name = ../db/MITopencountry/image_0366.jpg / Predicted class = 7 / Actual class = 16175520.
+699
+700
+Image name = ../db/MITopencountry/image_0121.jpg / Predicted class = 7 / Actual class = 16175520.
+701
+702
+Image name = ../db/MITopencountry/image_0170.jpg / Predicted class = 7 / Actual class = 16175520.
+703
+704
+705
+Image name = ../db/MITopencountry/image_0264.jpg / Predicted class = 7 / Actual class = 16175520.
+706
+707
+Image name = ../db/MITopencountry/image_0018.jpg / Predicted class = 7 / Actual class = 16175520.
+708
+Image name = ../db/MITopencountry/image_0167.jpg / Predicted class = 7 / Actual class = 16175520.
+709
+Image name = ../db/MITopencountry/image_0023.jpg / Predicted class = 7 / Actual class = 16175520.
+710
+Image name = ../db/MITopencountry/image_0265.jpg / Predicted class = 7 / Actual class = 16175520.
+711
+712
+713
+714
+Image name = ../db/MITopencountry/image_0221.jpg / Predicted class = 7 / Actual class = 16175520.
+715
+716
+717
+Image name = ../db/MITopencountry/image_0065.jpg / Predicted class = 7 / Actual class = 16175520.
+718
+Image name = ../db/MITopencountry/image_0027.jpg / Predicted class = 7 / Actual class = 16175520.
+719
+720
+721
+722
+Image name = ../db/MITopencountry/image_0175.jpg / Predicted class = 7 / Actual class = 16175520.
+723
+724
+725
+Image name = ../db/MITopencountry/image_0327.jpg / Predicted class = 7 / Actual class = 16175520.
+726
+Image name = ../db/MITopencountry/image_0195.jpg / Predicted class = 7 / Actual class = 16175520.
+727
+Image name = ../db/MITopencountry/image_0329.jpg / Predicted class = 7 / Actual class = 16175520.
+728
+Image name = ../db/MITopencountry/image_0306.jpg / Predicted class = 7 / Actual class = 16175520.
+729
+730
+731
+732
+Image name = ../db/MITopencountry/image_0004.jpg / Predicted class = 7 / Actual class = 16175520.
+733
+Image name = ../db/MITopencountry/image_0313.jpg / Predicted class = 7 / Actual class = 16175520.
+734
+Image name = ../db/MITopencountry/image_0268.jpg / Predicted class = 7 / Actual class = 16175520.
+735
+Image name = ../db/MITopencountry/image_0105.jpg / Predicted class = 7 / Actual class = 16175520.
+736
+Image name = ../db/MITopencountry/image_0320.jpg / Predicted class = 7 / Actual class = 16175520.
+737
+738
+Image name = ../db/MITopencountry/image_0030.jpg / Predicted class = 7 / Actual class = 16175520.
+739
+740
+741
+742
+743
+Image name = ../db/MITopencountry/image_0103.jpg / Predicted class = 7 / Actual class = 16175520.
+744
+Image name = ../db/MITopencountry/image_0358.jpg / Predicted class = 7 / Actual class = 16175520.
+745
+Image name = ../db/MITopencountry/image_0248.jpg / Predicted class = 7 / Actual class = 16175520.
+746
+Image name = ../db/MITopencountry/image_0051.jpg / Predicted class = 7 / Actual class = 16175520.
+747
+748
+Image name = ../db/MITopencountry/image_0080.jpg / Predicted class = 7 / Actual class = 16175520.
+749
+Image name = ../db/MITopencountry/image_0202.jpg / Predicted class = 7 / Actual class = 16175520.
+750
+Image name = ../db/MITopencountry/image_0336.jpg / Predicted class = 7 / Actual class = 16175520.
+751
+Image name = ../db/MITopencountry/image_0207.jpg / Predicted class = 7 / Actual class = 16175520.
+752
+Image name = ../db/MITopencountry/image_0011.jpg / Predicted class = 7 / Actual class = 16175520.
+753
+Image name = ../db/MITopencountry/image_0257.jpg / Predicted class = 7 / Actual class = 16175520.
+754
+755
+756
+Image name = ../db/MITopencountry/image_0043.jpg / Predicted class = 7 / Actual class = 16175520.
+757
+758
+759
+Image name = ../db/MITstreet/image_0268.jpg / Predicted class = 8 / Actual class = 16175520.
+760
+761
+Image name = ../db/MITstreet/image_0292.jpg / Predicted class = 8 / Actual class = 16175520.
+762
+Image name = ../db/MITstreet/image_0099.jpg / Predicted class = 8 / Actual class = 16175520.
+763
+764
+765
+766
+767
+768
+769
+770
+771
+772
+773
+774
+Image name = ../db/MITstreet/image_0265.jpg / Predicted class = 8 / Actual class = 16175520.
+775
+Image name = ../db/MITstreet/image_0056.jpg / Predicted class = 8 / Actual class = 16175520.
+776
+Image name = ../db/MITstreet/image_0101.jpg / Predicted class = 8 / Actual class = 16175520.
+777
+Image name = ../db/MITstreet/image_0014.jpg / Predicted class = 8 / Actual class = 16175520.
+778
+779
+Image name = ../db/MITstreet/image_0050.jpg / Predicted class = 8 / Actual class = 16175520.
+780
+781
+Image name = ../db/MITstreet/image_0204.jpg / Predicted class = 8 / Actual class = 16175520.
+782
+Image name = ../db/MITstreet/image_0263.jpg / Predicted class = 8 / Actual class = 16175520.
+783
+784
+785
+786
+Image name = ../db/MITstreet/image_0260.jpg / Predicted class = 8 / Actual class = 16175520.
+787
+788
+789
+790
+791
+792
+793
+794
+795
+796
+797
+798
+Image name = ../db/MITstreet/image_0082.jpg / Predicted class = 8 / Actual class = 16175520.
+799
+Image name = ../db/MITstreet/image_0243.jpg / Predicted class = 8 / Actual class = 16175520.
+800
+801
+802
+803
+Image name = ../db/MITstreet/image_0277.jpg / Predicted class = 8 / Actual class = 16175520.
+804
+Image name = ../db/MITstreet/image_0030.jpg / Predicted class = 8 / Actual class = 16175520.
+805
+806
+Image name = ../db/MITstreet/image_0098.jpg / Predicted class = 8 / Actual class = 16175520.
+807
+808
+Image name = ../db/MITstreet/image_0089.jpg / Predicted class = 8 / Actual class = 16175520.
+809
+810
+811
+Image name = ../db/MITstreet/image_0096.jpg / Predicted class = 8 / Actual class = 16175520.
+812
+813
+814
+Image name = ../db/MITstreet/image_0142.jpg / Predicted class = 8 / Actual class = 16175520.
+815
+Image name = ../db/MITstreet/image_0075.jpg / Predicted class = 8 / Actual class = 16175520.
+816
+817
+818
+Image name = ../db/MITstreet/image_0122.jpg / Predicted class = 8 / Actual class = 16175520.
+819
+Image name = ../db/MITstreet/image_0202.jpg / Predicted class = 8 / Actual class = 16175520.
+820
+Image name = ../db/MITstreet/image_0052.jpg / Predicted class = 8 / Actual class = 16175520.
+821
+822
+Image name = ../db/MITstreet/image_0013.jpg / Predicted class = 8 / Actual class = 16175520.
+823
+Image name = ../db/MITstreet/image_0254.jpg / Predicted class = 8 / Actual class = 16175520.
+824
+825
+Image name = ../db/MITstreet/image_0117.jpg / Predicted class = 8 / Actual class = 16175520.
+826
+Image name = ../db/MITstreet/image_0163.jpg / Predicted class = 8 / Actual class = 16175520.
+827
+Image name = ../db/MITstreet/image_0033.jpg / Predicted class = 8 / Actual class = 16175520.
+828
+Image name = ../db/MITstreet/image_0246.jpg / Predicted class = 8 / Actual class = 16175520.
+829
+830
+Image name = ../db/MITstreet/image_0069.jpg / Predicted class = 8 / Actual class = 16175520.
+831
+832
+833
+Image name = ../db/MITstreet/image_0195.jpg / Predicted class = 8 / Actual class = 16175520.
+834
+Image name = ../db/MITstreet/image_0258.jpg / Predicted class = 8 / Actual class = 16175520.
+835
+Image name = ../db/MITstreet/image_0081.jpg / Predicted class = 8 / Actual class = 16175520.
+836
+837
+838
+839
+840
+841
+842
+Image name = ../db/MITstreet/image_0255.jpg / Predicted class = 8 / Actual class = 16175520.
+843
+844
+845
+Image name = ../db/MITstreet/image_0276.jpg / Predicted class = 8 / Actual class = 16175520.
+846
+Image name = ../db/MITstreet/image_0040.jpg / Predicted class = 8 / Actual class = 16175520.
+847
+Image name = ../db/MITstreet/image_0047.jpg / Predicted class = 8 / Actual class = 16175520.
+848
+849
+850
+851
+852
+853
+854
+855
+Image name = ../db/MITtallbuilding/image_0183.jpg / Predicted class = 9 / Actual class = 16175520.
+856
+857
+Image name = ../db/MITtallbuilding/image_0224.jpg / Predicted class = 9 / Actual class = 16175520.
+858
+Image name = ../db/MITtallbuilding/image_0132.jpg / Predicted class = 9 / Actual class = 16175520.
+859
+Image name = ../db/MITtallbuilding/image_0028.jpg / Predicted class = 9 / Actual class = 16175520.
+860
+861
+Image name = ../db/MITtallbuilding/image_0187.jpg / Predicted class = 9 / Actual class = 16175520.
+862
+863
+864
+865
+866
+867
+Image name = ../db/MITtallbuilding/image_0154.jpg / Predicted class = 9 / Actual class = 16175520.
+868
+Image name = ../db/MITtallbuilding/image_0110.jpg / Predicted class = 9 / Actual class = 16175520.
+869
+870
+Image name = ../db/MITtallbuilding/image_0124.jpg / Predicted class = 9 / Actual class = 16175520.
+871
+872
+Image name = ../db/MITtallbuilding/image_0284.jpg / Predicted class = 9 / Actual class = 16175520.
+873
+Image name = ../db/MITtallbuilding/image_0013.jpg / Predicted class = 9 / Actual class = 16175520.
+874
+875
+876
+Image name = ../db/MITtallbuilding/image_0099.jpg / Predicted class = 9 / Actual class = 16175520.
+877
+Image name = ../db/MITtallbuilding/image_0225.jpg / Predicted class = 9 / Actual class = 16175520.
+878
+879
+880
+Image name = ../db/MITtallbuilding/image_0297.jpg / Predicted class = 9 / Actual class = 16175520.
+881
+882
+Image name = ../db/MITtallbuilding/image_0040.jpg / Predicted class = 9 / Actual class = 16175520.
+883
+Image name = ../db/MITtallbuilding/image_0282.jpg / Predicted class = 9 / Actual class = 16175520.
+884
+Image name = ../db/MITtallbuilding/image_0211.jpg / Predicted class = 9 / Actual class = 16175520.
+885
+Image name = ../db/MITtallbuilding/image_0260.jpg / Predicted class = 9 / Actual class = 16175520.
+886
+887
+888
+889
+Image name = ../db/MITtallbuilding/image_0048.jpg / Predicted class = 9 / Actual class = 16175520.
+890
+891
+892
+893
+894
+895
+896
+Image name = ../db/MITtallbuilding/image_0293.jpg / Predicted class = 9 / Actual class = 16175520.
+897
+Image name = ../db/MITtallbuilding/image_0206.jpg / Predicted class = 9 / Actual class = 16175520.
+898
+899
+900
+Image name = ../db/MITtallbuilding/image_0134.jpg / Predicted class = 9 / Actual class = 16175520.
+901
+Image name = ../db/MITtallbuilding/image_0292.jpg / Predicted class = 9 / Actual class = 16175520.
+902
+Image name = ../db/MITtallbuilding/image_0066.jpg / Predicted class = 9 / Actual class = 16175520.
+903
+904
+905
+906
+Image name = ../db/MITtallbuilding/image_0214.jpg / Predicted class = 9 / Actual class = 16175520.
+907
+908
+909
+910
+911
+912
+Image name = ../db/MITtallbuilding/image_0057.jpg / Predicted class = 9 / Actual class = 16175520.
+913
+Image name = ../db/MITtallbuilding/image_0279.jpg / Predicted class = 9 / Actual class = 16175520.
+914
+Image name = ../db/MITtallbuilding/image_0001.jpg / Predicted class = 9 / Actual class = 16175520.
+915
+Image name = ../db/MITtallbuilding/image_0190.jpg / Predicted class = 9 / Actual class = 16175520.
+916
+Image name = ../db/MITtallbuilding/image_0339.jpg / Predicted class = 9 / Actual class = 16175520.
+917
+918
+919
+920
+Image name = ../db/MITtallbuilding/image_0102.jpg / Predicted class = 9 / Actual class = 16175520.
+921
+922
+Image name = ../db/MITtallbuilding/image_0192.jpg / Predicted class = 9 / Actual class = 16175520.
+923
+Image name = ../db/MITtallbuilding/image_0318.jpg / Predicted class = 9 / Actual class = 16175520.
+924
+925
+926
+Image name = ../db/MITtallbuilding/image_0031.jpg / Predicted class = 9 / Actual class = 16175520.
+927
+Image name = ../db/MITtallbuilding/image_0283.jpg / Predicted class = 9 / Actual class = 16175520.
+928
+929
+Image name = ../db/MITtallbuilding/image_0026.jpg / Predicted class = 9 / Actual class = 16175520.
+930
+931
+932
+933
+934
+935
+936
+Image name = ../db/MITtallbuilding/image_0262.jpg / Predicted class = 9 / Actual class = 16175520.
+937
+Image name = ../db/MITtallbuilding/image_0053.jpg / Predicted class = 9 / Actual class = 16175520.
+938
+Image name = ../db/MITtallbuilding/image_0117.jpg / Predicted class = 9 / Actual class = 16175520.
+939
+940
+Image name = ../db/MITtallbuilding/image_0084.jpg / Predicted class = 9 / Actual class = 16175520.
+941
+Image name = ../db/MITtallbuilding/image_0338.jpg / Predicted class = 9 / Actual class = 16175520.
+942
+Image name = ../db/MITtallbuilding/image_0107.jpg / Predicted class = 9 / Actual class = 16175520.
+943
+944
+945
+946
+947
+948
+949
+950
+951
+952
+953
+954
+955
+956
+957
+958
+959
+Image name = ../db/MITtallbuilding/image_0325.jpg / Predicted class = 9 / Actual class = 16175520.
+960
+Image name = ../db/MITtallbuilding/image_0138.jpg / Predicted class = 9 / Actual class = 16175520.
+961
+Image name = ../db/MITtallbuilding/image_0312.jpg / Predicted class = 9 / Actual class = 16175520.
+962
+963
+964
+965
+966
+Image name = ../db/MITtallbuilding/image_0321.jpg / Predicted class = 9 / Actual class = 16175520.
+967
+Image name = ../db/MITtallbuilding/image_0350.jpg / Predicted class = 9 / Actual class = 16175520.
+968
+969
+970
+Image name = ../db/MITtallbuilding/image_0106.jpg / Predicted class = 9 / Actual class = 16175520.
+971
+Image name = ../db/MITtallbuilding/image_0033.jpg / Predicted class = 9 / Actual class = 16175520.
+972
+973
+974
+975
+976
+977
+978
+979
+980
+981
+982
+Image name = ../db/PARoffice/image_0210.jpg / Predicted class = 10 / Actual class = 16175520.
+983
+984
+985
+986
+987
+988
+989
+990
+991
+992
+993
+994
+995
+996
+997
+998
+Image name = ../db/PARoffice/image_0101.jpg / Predicted class = 10 / Actual class = 16175520.
+999
+1000
+1001
+1002
+1003
+1004
+1005
+Image name = ../db/PARoffice/image_0155.jpg / Predicted class = 10 / Actual class = 16175520.
+1006
+1007
+1008
+1009
+1010
+1011
+1012
+1013
+Image name = ../db/PARoffice/image_0040.jpg / Predicted class = 10 / Actual class = 16175520.
+1014
+1015
+1016
+1017
+1018
+1019
+1020
+1021
+1022
+1023
+1024
+1025
+1026
+Image name = ../db/PARoffice/image_0029.jpg / Predicted class = 10 / Actual class = 16175520.
+1027
+1028
+1029
+1030
+1031
+1032
+1033
+1034
+1035
+1036
+1037
+1038
+1039
+1040
+1041
+1042
+ERR rate 0.342282
+Predict in67.8299s
+cf size
+13
+
+Matrice de confusion
+
+./training learning_3_1 vocabulary.xml svm.xml 300 0.5 1000
+Dic
+1000
+#####
+[1 x 1043]
+1043
+-168429831
+-50397186
+#####
+0
+1
+2
+3
+4
+5
+6
+7
+Image name = ../db/CALsuburb/image_0151.jpg / Predicted class = 1 / Actual class = 16732576.
+8
+Image name = ../db/CALsuburb/image_0003.jpg / Predicted class = 1 / Actual class = 16732576.
+9
+Image name = ../db/CALsuburb/image_0164.jpg / Predicted class = 1 / Actual class = 16732576.
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+Image name = ../db/CALsuburb/image_0054.jpg / Predicted class = 1 / Actual class = 16732576.
+23
+Image name = ../db/CALsuburb/image_0225.jpg / Predicted class = 1 / Actual class = 16732576.
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+Image name = ../db/CALsuburb/image_0198.jpg / Predicted class = 1 / Actual class = 16732576.
+37
+38
+39
+Image name = ../db/CALsuburb/image_0140.jpg / Predicted class = 1 / Actual class = 16732576.
+40
+41
+42
+43
+44
+45
+46
+47
+48
+Image name = ../db/CALsuburb/image_0121.jpg / Predicted class = 1 / Actual class = 16732576.
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+Image name = ../db/CALsuburb/image_0002.jpg / Predicted class = 1 / Actual class = 16732576.
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+Image name = ../db/MITcoast/image_0177.jpg / Predicted class = 2 / Actual class = 16732576.
+81
+82
+Image name = ../db/MITcoast/image_0230.jpg / Predicted class = 2 / Actual class = 16732576.
+83
+Image name = ../db/MITcoast/image_0275.jpg / Predicted class = 2 / Actual class = 16732576.
+84
+Image name = ../db/MITcoast/image_0233.jpg / Predicted class = 2 / Actual class = 16732576.
+85
+86
+87
+Image name = ../db/MITcoast/image_0076.jpg / Predicted class = 2 / Actual class = 16732576.
+88
+89
+90
+Image name = ../db/MITcoast/image_0153.jpg / Predicted class = 2 / Actual class = 16732576.
+91
+Image name = ../db/MITcoast/image_0116.jpg / Predicted class = 2 / Actual class = 16732576.
+92
+Image name = ../db/MITcoast/image_0129.jpg / Predicted class = 2 / Actual class = 16732576.
+93
+94
+95
+96
+97
+98
+99
+Image name = ../db/MITcoast/image_0167.jpg / Predicted class = 2 / Actual class = 16732576.
+100
+Image name = ../db/MITcoast/image_0077.jpg / Predicted class = 2 / Actual class = 16732576.
+101
+Image name = ../db/MITcoast/image_0162.jpg / Predicted class = 2 / Actual class = 16732576.
+102
+Image name = ../db/MITcoast/image_0299.jpg / Predicted class = 2 / Actual class = 16732576.
+103
+Image name = ../db/MITcoast/image_0005.jpg / Predicted class = 2 / Actual class = 16732576.
+104
+105
+106
+107
+108
+Image name = ../db/MITcoast/image_0139.jpg / Predicted class = 2 / Actual class = 16732576.
+109
+110
+Image name = ../db/MITcoast/image_0240.jpg / Predicted class = 2 / Actual class = 16732576.
+111
+Image name = ../db/MITcoast/image_0141.jpg / Predicted class = 2 / Actual class = 16732576.
+112
+113
+Image name = ../db/MITcoast/image_0263.jpg / Predicted class = 2 / Actual class = 16732576.
+114
+Image name = ../db/MITcoast/image_0326.jpg / Predicted class = 2 / Actual class = 16732576.
+115
+Image name = ../db/MITcoast/image_0142.jpg / Predicted class = 2 / Actual class = 16732576.
+116
+117
+Image name = ../db/MITcoast/image_0159.jpg / Predicted class = 2 / Actual class = 16732576.
+118
+Image name = ../db/MITcoast/image_0119.jpg / Predicted class = 2 / Actual class = 16732576.
+119
+120
+121
+122
+Image name = ../db/MITcoast/image_0084.jpg / Predicted class = 2 / Actual class = 16732576.
+123
+124
+125
+126
+127
+Image name = ../db/MITcoast/image_0264.jpg / Predicted class = 2 / Actual class = 16732576.
+128
+129
+Image name = ../db/MITcoast/image_0111.jpg / Predicted class = 2 / Actual class = 16732576.
+130
+Image name = ../db/MITcoast/image_0117.jpg / Predicted class = 2 / Actual class = 16732576.
+131
+132
+133
+134
+Image name = ../db/MITcoast/image_0105.jpg / Predicted class = 2 / Actual class = 16732576.
+135
+Image name = ../db/MITcoast/image_0144.jpg / Predicted class = 2 / Actual class = 16732576.
+136
+Image name = ../db/MITcoast/image_0181.jpg / Predicted class = 2 / Actual class = 16732576.
+137
+Image name = ../db/MITcoast/image_0114.jpg / Predicted class = 2 / Actual class = 16732576.
+138
+Image name = ../db/MITcoast/image_0009.jpg / Predicted class = 2 / Actual class = 16732576.
+139
+140
+Image name = ../db/MITcoast/image_0121.jpg / Predicted class = 2 / Actual class = 16732576.
+141
+142
+143
+144
+145
+146
+147
+148
+149
+Image name = ../db/MITcoast/image_0261.jpg / Predicted class = 2 / Actual class = 16732576.
+150
+151
+152
+153
+154
+155
+156
+157
+Image name = ../db/MITcoast/image_0156.jpg / Predicted class = 2 / Actual class = 16732576.
+158
+Image name = ../db/MITcoast/image_0191.jpg / Predicted class = 2 / Actual class = 16732576.
+159
+Image name = ../db/MITcoast/image_0245.jpg / Predicted class = 2 / Actual class = 16732576.
+160
+161
+162
+163
+164
+165
+Image name = ../db/MITcoast/image_0217.jpg / Predicted class = 2 / Actual class = 16732576.
+166
+167
+168
+Image name = ../db/MITcoast/image_0274.jpg / Predicted class = 2 / Actual class = 16732576.
+169
+Image name = ../db/MITcoast/image_0316.jpg / Predicted class = 2 / Actual class = 16732576.
+170
+Image name = ../db/MITcoast/image_0352.jpg / Predicted class = 2 / Actual class = 16732576.
+171
+172
+Image name = ../db/MITcoast/image_0228.jpg / Predicted class = 2 / Actual class = 16732576.
+173
+174
+Image name = ../db/MITcoast/image_0359.jpg / Predicted class = 2 / Actual class = 16732576.
+175
+176
+177
+178
+179
+Image name = ../db/MITcoast/image_0262.jpg / Predicted class = 2 / Actual class = 16732576.
+180
+Image name = ../db/MITcoast/image_0166.jpg / Predicted class = 2 / Actual class = 16732576.
+181
+Image name = ../db/MITcoast/image_0205.jpg / Predicted class = 2 / Actual class = 16732576.
+182
+Image name = ../db/MITcoast/image_0098.jpg / Predicted class = 2 / Actual class = 16732576.
+183
+184
+185
+186
+187
+Image name = ../db/MITcoast/image_0091.jpg / Predicted class = 2 / Actual class = 16732576.
+188
+Image name = ../db/MITcoast/image_0152.jpg / Predicted class = 2 / Actual class = 16732576.
+189
+190
+191
+Image name = ../db/MITcoast/image_0301.jpg / Predicted class = 2 / Actual class = 16732576.
+192
+193
+Image name = ../db/MITcoast/image_0185.jpg / Predicted class = 2 / Actual class = 16732576.
+194
+Image name = ../db/MITcoast/image_0296.jpg / Predicted class = 2 / Actual class = 16732576.
+195
+196
+197
+Image name = ../db/MITcoast/image_0214.jpg / Predicted class = 2 / Actual class = 16732576.
+198
+199
+200
+201
+Image name = ../db/MITforest/image_0257.jpg / Predicted class = 3 / Actual class = 16732576.
+202
+203
+204
+205
+206
+Image name = ../db/MITforest/image_0007.jpg / Predicted class = 3 / Actual class = 16732576.
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+Image name = ../db/MITforest/image_0083.jpg / Predicted class = 3 / Actual class = 16732576.
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+Image name = ../db/MITforest/image_0189.jpg / Predicted class = 3 / Actual class = 16732576.
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+Image name = ../db/MITforest/image_0120.jpg / Predicted class = 3 / Actual class = 16732576.
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+Image name = ../db/MITforest/image_0290.jpg / Predicted class = 3 / Actual class = 16732576.
+283
+284
+285
+286
+287
+288
+Image name = ../db/MITforest/image_0322.jpg / Predicted class = 3 / Actual class = 16732576.
+289
+290
+Image name = ../db/MITforest/image_0325.jpg / Predicted class = 3 / Actual class = 16732576.
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+Image name = ../db/MITforest/image_0036.jpg / Predicted class = 3 / Actual class = 16732576.
+304
+305
+306
+Image name = ../db/MITforest/image_0282.jpg / Predicted class = 3 / Actual class = 16732576.
+307
+308
+309
+310
+Image name = ../db/MIThighway/image_0031.jpg / Predicted class = 4 / Actual class = 16732576.
+311
+312
+Image name = ../db/MIThighway/image_0136.jpg / Predicted class = 4 / Actual class = 16732576.
+313
+314
+315
+Image name = ../db/MIThighway/image_0226.jpg / Predicted class = 4 / Actual class = 16732576.
+316
+Image name = ../db/MIThighway/image_0228.jpg / Predicted class = 4 / Actual class = 16732576.
+317
+Image name = ../db/MIThighway/image_0246.jpg / Predicted class = 4 / Actual class = 16732576.
+318
+Image name = ../db/MIThighway/image_0210.jpg / Predicted class = 4 / Actual class = 16732576.
+319
+320
+Image name = ../db/MIThighway/image_0091.jpg / Predicted class = 4 / Actual class = 16732576.
+321
+Image name = ../db/MIThighway/image_0158.jpg / Predicted class = 4 / Actual class = 16732576.
+322
+323
+Image name = ../db/MIThighway/image_0251.jpg / Predicted class = 4 / Actual class = 16732576.
+324
+Image name = ../db/MIThighway/image_0231.jpg / Predicted class = 4 / Actual class = 16732576.
+325
+326
+Image name = ../db/MIThighway/image_0039.jpg / Predicted class = 4 / Actual class = 16732576.
+327
+328
+Image name = ../db/MIThighway/image_0155.jpg / Predicted class = 4 / Actual class = 16732576.
+329
+Image name = ../db/MIThighway/image_0217.jpg / Predicted class = 4 / Actual class = 16732576.
+330
+Image name = ../db/MIThighway/image_0138.jpg / Predicted class = 4 / Actual class = 16732576.
+331
+Image name = ../db/MIThighway/image_0244.jpg / Predicted class = 4 / Actual class = 16732576.
+332
+Image name = ../db/MIThighway/image_0239.jpg / Predicted class = 4 / Actual class = 16732576.
+333
+Image name = ../db/MIThighway/image_0212.jpg / Predicted class = 4 / Actual class = 16732576.
+334
+335
+Image name = ../db/MIThighway/image_0002.jpg / Predicted class = 4 / Actual class = 16732576.
+336
+Image name = ../db/MIThighway/image_0139.jpg / Predicted class = 4 / Actual class = 16732576.
+337
+338
+Image name = ../db/MIThighway/image_0238.jpg / Predicted class = 4 / Actual class = 16732576.
+339
+340
+341
+Image name = ../db/MIThighway/image_0225.jpg / Predicted class = 4 / Actual class = 16732576.
+342
+343
+Image name = ../db/MIThighway/image_0071.jpg / Predicted class = 4 / Actual class = 16732576.
+344
+Image name = ../db/MIThighway/image_0038.jpg / Predicted class = 4 / Actual class = 16732576.
+345
+346
+347
+Image name = ../db/MIThighway/image_0045.jpg / Predicted class = 4 / Actual class = 16732576.
+348
+349
+Image name = ../db/MIThighway/image_0257.jpg / Predicted class = 4 / Actual class = 16732576.
+350
+351
+352
+Image name = ../db/MIThighway/image_0254.jpg / Predicted class = 4 / Actual class = 16732576.
+353
+354
+Image name = ../db/MIThighway/image_0007.jpg / Predicted class = 4 / Actual class = 16732576.
+355
+Image name = ../db/MIThighway/image_0161.jpg / Predicted class = 4 / Actual class = 16732576.
+356
+357
+Image name = ../db/MIThighway/image_0169.jpg / Predicted class = 4 / Actual class = 16732576.
+358
+359
+Image name = ../db/MIThighway/image_0128.jpg / Predicted class = 4 / Actual class = 16732576.
+360
+361
+Image name = ../db/MIThighway/image_0065.jpg / Predicted class = 4 / Actual class = 16732576.
+362
+Image name = ../db/MIThighway/image_0250.jpg / Predicted class = 4 / Actual class = 16732576.
+363
+Image name = ../db/MIThighway/image_0009.jpg / Predicted class = 4 / Actual class = 16732576.
+364
+Image name = ../db/MIThighway/image_0123.jpg / Predicted class = 4 / Actual class = 16732576.
+365
+Image name = ../db/MIThighway/image_0243.jpg / Predicted class = 4 / Actual class = 16732576.
+366
+367
+368
+Image name = ../db/MIThighway/image_0245.jpg / Predicted class = 4 / Actual class = 16732576.
+369
+Image name = ../db/MIThighway/image_0253.jpg / Predicted class = 4 / Actual class = 16732576.
+370
+Image name = ../db/MIThighway/image_0156.jpg / Predicted class = 4 / Actual class = 16732576.
+371
+372
+Image name = ../db/MIThighway/image_0236.jpg / Predicted class = 4 / Actual class = 16732576.
+373
+Image name = ../db/MIThighway/image_0088.jpg / Predicted class = 4 / Actual class = 16732576.
+374
+Image name = ../db/MIThighway/image_0164.jpg / Predicted class = 4 / Actual class = 16732576.
+375
+376
+Image name = ../db/MIThighway/image_0020.jpg / Predicted class = 4 / Actual class = 16732576.
+377
+Image name = ../db/MIThighway/image_0175.jpg / Predicted class = 4 / Actual class = 16732576.
+378
+Image name = ../db/MIThighway/image_0207.jpg / Predicted class = 4 / Actual class = 16732576.
+379
+Image name = ../db/MIThighway/image_0016.jpg / Predicted class = 4 / Actual class = 16732576.
+380
+381
+Image name = ../db/MIThighway/image_0197.jpg / Predicted class = 4 / Actual class = 16732576.
+382
+Image name = ../db/MIThighway/image_0109.jpg / Predicted class = 4 / Actual class = 16732576.
+383
+Image name = ../db/MIThighway/image_0256.jpg / Predicted class = 4 / Actual class = 16732576.
+384
+Image name = ../db/MIThighway/image_0108.jpg / Predicted class = 4 / Actual class = 16732576.
+385
+Image name = ../db/MIThighway/image_0208.jpg / Predicted class = 4 / Actual class = 16732576.
+386
+387
+388
+Image name = ../db/MIThighway/image_0082.jpg / Predicted class = 4 / Actual class = 16732576.
+389
+Image name = ../db/MIThighway/image_0235.jpg / Predicted class = 4 / Actual class = 16732576.
+390
+391
+392
+Image name = ../db/MIThighway/image_0121.jpg / Predicted class = 4 / Actual class = 16732576.
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+Image name = ../db/MITinsidecity/image_0213.jpg / Predicted class = 5 / Actual class = 16732576.
+403
+404
+405
+406
+Image name = ../db/MITinsidecity/image_0211.jpg / Predicted class = 5 / Actual class = 16732576.
+407
+Image name = ../db/MITinsidecity/image_0283.jpg / Predicted class = 5 / Actual class = 16732576.
+408
+409
+Image name = ../db/MITinsidecity/image_0208.jpg / Predicted class = 5 / Actual class = 16732576.
+410
+411
+412
+Image name = ../db/MITinsidecity/image_0008.jpg / Predicted class = 5 / Actual class = 16732576.
+413
+414
+415
+416
+417
+418
+419
+Image name = ../db/MITinsidecity/image_0288.jpg / Predicted class = 5 / Actual class = 16732576.
+420
+421
+422
+Image name = ../db/MITinsidecity/image_0180.jpg / Predicted class = 5 / Actual class = 16732576.
+423
+424
+Image name = ../db/MITinsidecity/image_0168.jpg / Predicted class = 5 / Actual class = 16732576.
+425
+426
+Image name = ../db/MITinsidecity/image_0272.jpg / Predicted class = 5 / Actual class = 16732576.
+427
+428
+Image name = ../db/MITinsidecity/image_0090.jpg / Predicted class = 5 / Actual class = 16732576.
+429
+Image name = ../db/MITinsidecity/image_0228.jpg / Predicted class = 5 / Actual class = 16732576.
+430
+Image name = ../db/MITinsidecity/image_0201.jpg / Predicted class = 5 / Actual class = 16732576.
+431
+432
+433
+434
+435
+436
+Image name = ../db/MITinsidecity/image_0264.jpg / Predicted class = 5 / Actual class = 16732576.
+437
+438
+439
+Image name = ../db/MITinsidecity/image_0152.jpg / Predicted class = 5 / Actual class = 16732576.
+440
+Image name = ../db/MITinsidecity/image_0281.jpg / Predicted class = 5 / Actual class = 16732576.
+441
+442
+Image name = ../db/MITinsidecity/image_0206.jpg / Predicted class = 5 / Actual class = 16732576.
+443
+444
+Image name = ../db/MITinsidecity/image_0166.jpg / Predicted class = 5 / Actual class = 16732576.
+445
+446
+447
+Image name = ../db/MITinsidecity/image_0298.jpg / Predicted class = 5 / Actual class = 16732576.
+448
+449
+Image name = ../db/MITinsidecity/image_0046.jpg / Predicted class = 5 / Actual class = 16732576.
+450
+Image name = ../db/MITinsidecity/image_0073.jpg / Predicted class = 5 / Actual class = 16732576.
+451
+452
+Image name = ../db/MITinsidecity/image_0108.jpg / Predicted class = 5 / Actual class = 16732576.
+453
+454
+Image name = ../db/MITinsidecity/image_0307.jpg / Predicted class = 5 / Actual class = 16732576.
+455
+Image name = ../db/MITinsidecity/image_0064.jpg / Predicted class = 5 / Actual class = 16732576.
+456
+457
+458
+459
+460
+461
+462
+Image name = ../db/MITinsidecity/image_0153.jpg / Predicted class = 5 / Actual class = 16732576.
+463
+464
+465
+466
+467
+468
+469
+Image name = ../db/MITinsidecity/image_0224.jpg / Predicted class = 5 / Actual class = 16732576.
+470
+471
+Image name = ../db/MITinsidecity/image_0033.jpg / Predicted class = 5 / Actual class = 16732576.
+472
+Image name = ../db/MITinsidecity/image_0230.jpg / Predicted class = 5 / Actual class = 16732576.
+473
+474
+475
+Image name = ../db/MITinsidecity/image_0284.jpg / Predicted class = 5 / Actual class = 16732576.
+476
+477
+478
+Image name = ../db/MITinsidecity/image_0082.jpg / Predicted class = 5 / Actual class = 16732576.
+479
+480
+Image name = ../db/MITinsidecity/image_0158.jpg / Predicted class = 5 / Actual class = 16732576.
+481
+482
+Image name = ../db/MITinsidecity/image_0227.jpg / Predicted class = 5 / Actual class = 16732576.
+483
+Image name = ../db/MITinsidecity/image_0135.jpg / Predicted class = 5 / Actual class = 16732576.
+484
+485
+486
+487
+Image name = ../db/MITinsidecity/image_0172.jpg / Predicted class = 5 / Actual class = 16732576.
+488
+Image name = ../db/MITinsidecity/image_0179.jpg / Predicted class = 5 / Actual class = 16732576.
+489
+490
+491
+Image name = ../db/MITinsidecity/image_0293.jpg / Predicted class = 5 / Actual class = 16732576.
+492
+Image name = ../db/MITinsidecity/image_0240.jpg / Predicted class = 5 / Actual class = 16732576.
+493
+494
+495
+496
+Image name = ../db/MITinsidecity/image_0069.jpg / Predicted class = 5 / Actual class = 16732576.
+497
+498
+499
+Image name = ../db/MITmountain/image_0048.jpg / Predicted class = 6 / Actual class = 16732576.
+500
+Image name = ../db/MITmountain/image_0050.jpg / Predicted class = 6 / Actual class = 16732576.
+501
+502
+Image name = ../db/MITmountain/image_0309.jpg / Predicted class = 6 / Actual class = 16732576.
+503
+504
+505
+506
+507
+508
+509
+510
+Image name = ../db/MITmountain/image_0128.jpg / Predicted class = 6 / Actual class = 16732576.
+511
+Image name = ../db/MITmountain/image_0352.jpg / Predicted class = 6 / Actual class = 16732576.
+512
+513
+514
+515
+516
+517
+Image name = ../db/MITmountain/image_0214.jpg / Predicted class = 6 / Actual class = 16732576.
+518
+Image name = ../db/MITmountain/image_0182.jpg / Predicted class = 6 / Actual class = 16732576.
+519
+520
+Image name = ../db/MITmountain/image_0018.jpg / Predicted class = 6 / Actual class = 16732576.
+521
+522
+523
+524
+Image name = ../db/MITmountain/image_0104.jpg / Predicted class = 6 / Actual class = 16732576.
+525
+526
+527
+Image name = ../db/MITmountain/image_0095.jpg / Predicted class = 6 / Actual class = 16732576.
+528
+529
+Image name = ../db/MITmountain/image_0250.jpg / Predicted class = 6 / Actual class = 16732576.
+530
+531
+532
+533
+534
+535
+536
+537
+538
+Image name = ../db/MITmountain/image_0053.jpg / Predicted class = 6 / Actual class = 16732576.
+539
+540
+Image name = ../db/MITmountain/image_0097.jpg / Predicted class = 6 / Actual class = 16732576.
+541
+542
+Image name = ../db/MITmountain/image_0003.jpg / Predicted class = 6 / Actual class = 16732576.
+543
+544
+545
+546
+Image name = ../db/MITmountain/image_0322.jpg / Predicted class = 6 / Actual class = 16732576.
+547
+Image name = ../db/MITmountain/image_0301.jpg / Predicted class = 6 / Actual class = 16732576.
+548
+549
+550
+551
+Image name = ../db/MITmountain/image_0167.jpg / Predicted class = 6 / Actual class = 16732576.
+552
+553
+Image name = ../db/MITmountain/image_0098.jpg / Predicted class = 6 / Actual class = 16732576.
+554
+555
+Image name = ../db/MITmountain/image_0103.jpg / Predicted class = 6 / Actual class = 16732576.
+556
+557
+Image name = ../db/MITmountain/image_0005.jpg / Predicted class = 6 / Actual class = 16732576.
+558
+Image name = ../db/MITmountain/image_0092.jpg / Predicted class = 6 / Actual class = 16732576.
+559
+560
+561
+562
+Image name = ../db/MITmountain/image_0251.jpg / Predicted class = 6 / Actual class = 16732576.
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+Image name = ../db/MITmountain/image_0198.jpg / Predicted class = 6 / Actual class = 16732576.
+580
+581
+582
+583
+Image name = ../db/MITmountain/image_0240.jpg / Predicted class = 6 / Actual class = 16732576.
+584
+585
+586
+Image name = ../db/MITmountain/image_0093.jpg / Predicted class = 6 / Actual class = 16732576.
+587
+Image name = ../db/MITmountain/image_0355.jpg / Predicted class = 6 / Actual class = 16732576.
+588
+Image name = ../db/MITmountain/image_0323.jpg / Predicted class = 6 / Actual class = 16732576.
+589
+Image name = ../db/MITmountain/image_0279.jpg / Predicted class = 6 / Actual class = 16732576.
+590
+591
+Image name = ../db/MITmountain/image_0281.jpg / Predicted class = 6 / Actual class = 16732576.
+592
+Image name = ../db/MITmountain/image_0011.jpg / Predicted class = 6 / Actual class = 16732576.
+593
+594
+595
+596
+Image name = ../db/MITmountain/image_0271.jpg / Predicted class = 6 / Actual class = 16732576.
+597
+598
+599
+600
+Image name = ../db/MITmountain/image_0074.jpg / Predicted class = 6 / Actual class = 16732576.
+601
+Image name = ../db/MITmountain/image_0312.jpg / Predicted class = 6 / Actual class = 16732576.
+602
+603
+604
+605
+Image name = ../db/MITmountain/image_0142.jpg / Predicted class = 6 / Actual class = 16732576.
+606
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616
+617
+Image name = ../db/MITmountain/image_0246.jpg / Predicted class = 6 / Actual class = 16732576.
+618
+Image name = ../db/MITmountain/image_0208.jpg / Predicted class = 6 / Actual class = 16732576.
+619
+Image name = ../db/MITmountain/image_0079.jpg / Predicted class = 6 / Actual class = 16732576.
+620
+621
+Image name = ../db/MITopencountry/image_0360.jpg / Predicted class = 7 / Actual class = 16732576.
+622
+623
+624
+Image name = ../db/MITopencountry/image_0118.jpg / Predicted class = 7 / Actual class = 16732576.
+625
+626
+Image name = ../db/MITopencountry/image_0014.jpg / Predicted class = 7 / Actual class = 16732576.
+627
+628
+Image name = ../db/MITopencountry/image_0205.jpg / Predicted class = 7 / Actual class = 16732576.
+629
+Image name = ../db/MITopencountry/image_0267.jpg / Predicted class = 7 / Actual class = 16732576.
+630
+Image name = ../db/MITopencountry/image_0239.jpg / Predicted class = 7 / Actual class = 16732576.
+631
+Image name = ../db/MITopencountry/image_0209.jpg / Predicted class = 7 / Actual class = 16732576.
+632
+Image name = ../db/MITopencountry/image_0198.jpg / Predicted class = 7 / Actual class = 16732576.
+633
+Image name = ../db/MITopencountry/image_0143.jpg / Predicted class = 7 / Actual class = 16732576.
+634
+635
+636
+Image name = ../db/MITopencountry/image_0318.jpg / Predicted class = 7 / Actual class = 16732576.
+637
+Image name = ../db/MITopencountry/image_0394.jpg / Predicted class = 7 / Actual class = 16732576.
+638
+Image name = ../db/MITopencountry/image_0232.jpg / Predicted class = 7 / Actual class = 16732576.
+639
+Image name = ../db/MITopencountry/image_0392.jpg / Predicted class = 7 / Actual class = 16732576.
+640
+641
+Image name = ../db/MITopencountry/image_0287.jpg / Predicted class = 7 / Actual class = 16732576.
+642
+643
+Image name = ../db/MITopencountry/image_0253.jpg / Predicted class = 7 / Actual class = 16732576.
+644
+Image name = ../db/MITopencountry/image_0390.jpg / Predicted class = 7 / Actual class = 16732576.
+645
+Image name = ../db/MITopencountry/image_0322.jpg / Predicted class = 7 / Actual class = 16732576.
+646
+Image name = ../db/MITopencountry/image_0289.jpg / Predicted class = 7 / Actual class = 16732576.
+647
+Image name = ../db/MITopencountry/image_0388.jpg / Predicted class = 7 / Actual class = 16732576.
+648
+Image name = ../db/MITopencountry/image_0300.jpg / Predicted class = 7 / Actual class = 16732576.
+649
+650
+Image name = ../db/MITopencountry/image_0188.jpg / Predicted class = 7 / Actual class = 16732576.
+651
+652
+653
+Image name = ../db/MITopencountry/image_0076.jpg / Predicted class = 7 / Actual class = 16732576.
+654
+655
+Image name = ../db/MITopencountry/image_0294.jpg / Predicted class = 7 / Actual class = 16732576.
+656
+Image name = ../db/MITopencountry/image_0341.jpg / Predicted class = 7 / Actual class = 16732576.
+657
+658
+Image name = ../db/MITopencountry/image_0290.jpg / Predicted class = 7 / Actual class = 16732576.
+659
+660
+Image name = ../db/MITopencountry/image_0359.jpg / Predicted class = 7 / Actual class = 16732576.
+661
+662
+663
+Image name = ../db/MITopencountry/image_0159.jpg / Predicted class = 7 / Actual class = 16732576.
+664
+665
+Image name = ../db/MITopencountry/image_0229.jpg / Predicted class = 7 / Actual class = 16732576.
+666
+667
+668
+669
+670
+Image name = ../db/MITopencountry/image_0226.jpg / Predicted class = 7 / Actual class = 16732576.
+671
+672
+673
+Image name = ../db/MITopencountry/image_0133.jpg / Predicted class = 7 / Actual class = 16732576.
+674
+Image name = ../db/MITopencountry/image_0008.jpg / Predicted class = 7 / Actual class = 16732576.
+675
+Image name = ../db/MITopencountry/image_0007.jpg / Predicted class = 7 / Actual class = 16732576.
+676
+677
+Image name = ../db/MITopencountry/image_0383.jpg / Predicted class = 7 / Actual class = 16732576.
+678
+Image name = ../db/MITopencountry/image_0310.jpg / Predicted class = 7 / Actual class = 16732576.
+679
+Image name = ../db/MITopencountry/image_0176.jpg / Predicted class = 7 / Actual class = 16732576.
+680
+681
+Image name = ../db/MITopencountry/image_0153.jpg / Predicted class = 7 / Actual class = 16732576.
+682
+Image name = ../db/MITopencountry/image_0399.jpg / Predicted class = 7 / Actual class = 16732576.
+683
+Image name = ../db/MITopencountry/image_0296.jpg / Predicted class = 7 / Actual class = 16732576.
+684
+685
+686
+Image name = ../db/MITopencountry/image_0382.jpg / Predicted class = 7 / Actual class = 16732576.
+687
+Image name = ../db/MITopencountry/image_0157.jpg / Predicted class = 7 / Actual class = 16732576.
+688
+Image name = ../db/MITopencountry/image_0003.jpg / Predicted class = 7 / Actual class = 16732576.
+689
+Image name = ../db/MITopencountry/image_0307.jpg / Predicted class = 7 / Actual class = 16732576.
+690
+Image name = ../db/MITopencountry/image_0038.jpg / Predicted class = 7 / Actual class = 16732576.
+691
+Image name = ../db/MITopencountry/image_0152.jpg / Predicted class = 7 / Actual class = 16732576.
+692
+693
+Image name = ../db/MITopencountry/image_0147.jpg / Predicted class = 7 / Actual class = 16732576.
+694
+Image name = ../db/MITopencountry/image_0185.jpg / Predicted class = 7 / Actual class = 16732576.
+695
+696
+697
+Image name = ../db/MITopencountry/image_0181.jpg / Predicted class = 7 / Actual class = 16732576.
+698
+699
+Image name = ../db/MITopencountry/image_0015.jpg / Predicted class = 7 / Actual class = 16732576.
+700
+Image name = ../db/MITopencountry/image_0224.jpg / Predicted class = 7 / Actual class = 16732576.
+701
+Image name = ../db/MITopencountry/image_0010.jpg / Predicted class = 7 / Actual class = 16732576.
+702
+Image name = ../db/MITopencountry/image_0385.jpg / Predicted class = 7 / Actual class = 16732576.
+703
+704
+Image name = ../db/MITopencountry/image_0180.jpg / Predicted class = 7 / Actual class = 16732576.
+705
+706
+Image name = ../db/MITopencountry/image_0285.jpg / Predicted class = 7 / Actual class = 16732576.
+707
+Image name = ../db/MITopencountry/image_0098.jpg / Predicted class = 7 / Actual class = 16732576.
+708
+709
+710
+711
+712
+Image name = ../db/MITopencountry/image_0288.jpg / Predicted class = 7 / Actual class = 16732576.
+713
+714
+715
+716
+Image name = ../db/MITopencountry/image_0284.jpg / Predicted class = 7 / Actual class = 16732576.
+717
+Image name = ../db/MITopencountry/image_0217.jpg / Predicted class = 7 / Actual class = 16732576.
+718
+Image name = ../db/MITopencountry/image_0093.jpg / Predicted class = 7 / Actual class = 16732576.
+719
+Image name = ../db/MITopencountry/image_0060.jpg / Predicted class = 7 / Actual class = 16732576.
+720
+721
+722
+Image name = ../db/MITopencountry/image_0373.jpg / Predicted class = 7 / Actual class = 16732576.
+723
+724
+Image name = ../db/MITopencountry/image_0219.jpg / Predicted class = 7 / Actual class = 16732576.
+725
+726
+Image name = ../db/MITopencountry/image_0389.jpg / Predicted class = 7 / Actual class = 16732576.
+727
+Image name = ../db/MITopencountry/image_0378.jpg / Predicted class = 7 / Actual class = 16732576.
+728
+729
+730
+Image name = ../db/MITopencountry/image_0323.jpg / Predicted class = 7 / Actual class = 16732576.
+731
+732
+Image name = ../db/MITopencountry/image_0013.jpg / Predicted class = 7 / Actual class = 16732576.
+733
+Image name = ../db/MITopencountry/image_0057.jpg / Predicted class = 7 / Actual class = 16732576.
+734
+Image name = ../db/MITopencountry/image_0012.jpg / Predicted class = 7 / Actual class = 16732576.
+735
+736
+737
+738
+739
+740
+741
+Image name = ../db/MITopencountry/image_0216.jpg / Predicted class = 7 / Actual class = 16732576.
+742
+Image name = ../db/MITopencountry/image_0369.jpg / Predicted class = 7 / Actual class = 16732576.
+743
+Image name = ../db/MITopencountry/image_0260.jpg / Predicted class = 7 / Actual class = 16732576.
+744
+745
+Image name = ../db/MITopencountry/image_0282.jpg / Predicted class = 7 / Actual class = 16732576.
+746
+747
+748
+Image name = ../db/MITopencountry/image_0228.jpg / Predicted class = 7 / Actual class = 16732576.
+749
+Image name = ../db/MITopencountry/image_0040.jpg / Predicted class = 7 / Actual class = 16732576.
+750
+Image name = ../db/MITopencountry/image_0047.jpg / Predicted class = 7 / Actual class = 16732576.
+751
+Image name = ../db/MITopencountry/image_0338.jpg / Predicted class = 7 / Actual class = 16732576.
+752
+Image name = ../db/MITopencountry/image_0072.jpg / Predicted class = 7 / Actual class = 16732576.
+753
+754
+Image name = ../db/MITopencountry/image_0113.jpg / Predicted class = 7 / Actual class = 16732576.
+755
+756
+Image name = ../db/MITopencountry/image_0166.jpg / Predicted class = 7 / Actual class = 16732576.
+757
+758
+Image name = ../db/MITstreet/image_0176.jpg / Predicted class = 8 / Actual class = 16732576.
+759
+760
+761
+Image name = ../db/MITstreet/image_0165.jpg / Predicted class = 8 / Actual class = 16732576.
+762
+Image name = ../db/MITstreet/image_0103.jpg / Predicted class = 8 / Actual class = 16732576.
+763
+764
+Image name = ../db/MITstreet/image_0229.jpg / Predicted class = 8 / Actual class = 16732576.
+765
+766
+767
+768
+769
+Image name = ../db/MITstreet/image_0088.jpg / Predicted class = 8 / Actual class = 16732576.
+770
+771
+772
+773
+Image name = ../db/MITstreet/image_0216.jpg / Predicted class = 8 / Actual class = 16732576.
+774
+775
+776
+777
+Image name = ../db/MITstreet/image_0152.jpg / Predicted class = 8 / Actual class = 16732576.
+778
+779
+780
+Image name = ../db/MITstreet/image_0145.jpg / Predicted class = 8 / Actual class = 16732576.
+781
+Image name = ../db/MITstreet/image_0138.jpg / Predicted class = 8 / Actual class = 16732576.
+782
+783
+784
+785
+786
+787
+Image name = ../db/MITstreet/image_0055.jpg / Predicted class = 8 / Actual class = 16732576.
+788
+789
+790
+791
+Image name = ../db/MITstreet/image_0283.jpg / Predicted class = 8 / Actual class = 16732576.
+792
+793
+794
+Image name = ../db/MITstreet/image_0068.jpg / Predicted class = 8 / Actual class = 16732576.
+795
+796
+797
+798
+Image name = ../db/MITstreet/image_0090.jpg / Predicted class = 8 / Actual class = 16732576.
+799
+Image name = ../db/MITstreet/image_0253.jpg / Predicted class = 8 / Actual class = 16732576.
+800
+801
+802
+803
+804
+805
+806
+Image name = ../db/MITstreet/image_0038.jpg / Predicted class = 8 / Actual class = 16732576.
+807
+808
+809
+810
+811
+812
+813
+814
+815
+Image name = ../db/MITstreet/image_0242.jpg / Predicted class = 8 / Actual class = 16732576.
+816
+Image name = ../db/MITstreet/image_0017.jpg / Predicted class = 8 / Actual class = 16732576.
+817
+818
+819
+Image name = ../db/MITstreet/image_0135.jpg / Predicted class = 8 / Actual class = 16732576.
+820
+821
+822
+823
+824
+825
+826
+827
+Image name = ../db/MITstreet/image_0016.jpg / Predicted class = 8 / Actual class = 16732576.
+828
+829
+Image name = ../db/MITstreet/image_0175.jpg / Predicted class = 8 / Actual class = 16732576.
+830
+831
+832
+Image name = ../db/MITstreet/image_0015.jpg / Predicted class = 8 / Actual class = 16732576.
+833
+834
+Image name = ../db/MITstreet/image_0287.jpg / Predicted class = 8 / Actual class = 16732576.
+835
+836
+837
+838
+Image name = ../db/MITstreet/image_0060.jpg / Predicted class = 8 / Actual class = 16732576.
+839
+840
+841
+842
+843
+844
+Image name = ../db/MITstreet/image_0049.jpg / Predicted class = 8 / Actual class = 16732576.
+845
+Image name = ../db/MITstreet/image_0051.jpg / Predicted class = 8 / Actual class = 16732576.
+846
+Image name = ../db/MITstreet/image_0146.jpg / Predicted class = 8 / Actual class = 16732576.
+847
+848
+849
+Image name = ../db/MITstreet/image_0140.jpg / Predicted class = 8 / Actual class = 16732576.
+850
+Image name = ../db/MITstreet/image_0037.jpg / Predicted class = 8 / Actual class = 16732576.
+851
+Image name = ../db/MITstreet/image_0256.jpg / Predicted class = 8 / Actual class = 16732576.
+852
+Image name = ../db/MITstreet/image_0005.jpg / Predicted class = 8 / Actual class = 16732576.
+853
+854
+855
+Image name = ../db/MITtallbuilding/image_0300.jpg / Predicted class = 9 / Actual class = 16732576.
+856
+857
+Image name = ../db/MITtallbuilding/image_0259.jpg / Predicted class = 9 / Actual class = 16732576.
+858
+Image name = ../db/MITtallbuilding/image_0189.jpg / Predicted class = 9 / Actual class = 16732576.
+859
+860
+Image name = ../db/MITtallbuilding/image_0100.jpg / Predicted class = 9 / Actual class = 16732576.
+861
+Image name = ../db/MITtallbuilding/image_0204.jpg / Predicted class = 9 / Actual class = 16732576.
+862
+863
+Image name = ../db/MITtallbuilding/image_0168.jpg / Predicted class = 9 / Actual class = 16732576.
+864
+865
+Image name = ../db/MITtallbuilding/image_0281.jpg / Predicted class = 9 / Actual class = 16732576.
+866
+867
+868
+Image name = ../db/MITtallbuilding/image_0105.jpg / Predicted class = 9 / Actual class = 16732576.
+869
+870
+Image name = ../db/MITtallbuilding/image_0186.jpg / Predicted class = 9 / Actual class = 16732576.
+871
+872
+873
+874
+875
+Image name = ../db/MITtallbuilding/image_0156.jpg / Predicted class = 9 / Actual class = 16732576.
+876
+877
+878
+879
+880
+881
+Image name = ../db/MITtallbuilding/image_0061.jpg / Predicted class = 9 / Actual class = 16732576.
+882
+Image name = ../db/MITtallbuilding/image_0275.jpg / Predicted class = 9 / Actual class = 16732576.
+883
+Image name = ../db/MITtallbuilding/image_0166.jpg / Predicted class = 9 / Actual class = 16732576.
+884
+Image name = ../db/MITtallbuilding/image_0091.jpg / Predicted class = 9 / Actual class = 16732576.
+885
+886
+887
+888
+889
+Image name = ../db/MITtallbuilding/image_0346.jpg / Predicted class = 9 / Actual class = 16732576.
+890
+891
+Image name = ../db/MITtallbuilding/image_0177.jpg / Predicted class = 9 / Actual class = 16732576.
+892
+893
+Image name = ../db/MITtallbuilding/image_0121.jpg / Predicted class = 9 / Actual class = 16732576.
+894
+895
+Image name = ../db/MITtallbuilding/image_0017.jpg / Predicted class = 9 / Actual class = 16732576.
+896
+Image name = ../db/MITtallbuilding/image_0095.jpg / Predicted class = 9 / Actual class = 16732576.
+897
+Image name = ../db/MITtallbuilding/image_0222.jpg / Predicted class = 9 / Actual class = 16732576.
+898
+899
+Image name = ../db/MITtallbuilding/image_0002.jpg / Predicted class = 9 / Actual class = 16732576.
+900
+901
+Image name = ../db/MITtallbuilding/image_0145.jpg / Predicted class = 9 / Actual class = 16732576.
+902
+Image name = ../db/MITtallbuilding/image_0083.jpg / Predicted class = 9 / Actual class = 16732576.
+903
+Image name = ../db/MITtallbuilding/image_0063.jpg / Predicted class = 9 / Actual class = 16732576.
+904
+905
+906
+907
+908
+909
+Image name = ../db/MITtallbuilding/image_0353.jpg / Predicted class = 9 / Actual class = 16732576.
+910
+Image name = ../db/MITtallbuilding/image_0226.jpg / Predicted class = 9 / Actual class = 16732576.
+911
+912
+913
+Image name = ../db/MITtallbuilding/image_0157.jpg / Predicted class = 9 / Actual class = 16732576.
+914
+915
+916
+917
+Image name = ../db/MITtallbuilding/image_0324.jpg / Predicted class = 9 / Actual class = 16732576.
+918
+919
+920
+921
+922
+Image name = ../db/MITtallbuilding/image_0003.jpg / Predicted class = 9 / Actual class = 16732576.
+923
+924
+Image name = ../db/MITtallbuilding/image_0323.jpg / Predicted class = 9 / Actual class = 16732576.
+925
+926
+927
+928
+929
+930
+931
+932
+Image name = ../db/MITtallbuilding/image_0139.jpg / Predicted class = 9 / Actual class = 16732576.
+933
+934
+935
+Image name = ../db/MITtallbuilding/image_0268.jpg / Predicted class = 9 / Actual class = 16732576.
+936
+937
+938
+939
+940
+941
+942
+Image name = ../db/MITtallbuilding/image_0285.jpg / Predicted class = 9 / Actual class = 16732576.
+943
+944
+Image name = ../db/MITtallbuilding/image_0027.jpg / Predicted class = 9 / Actual class = 16732576.
+945
+946
+947
+948
+949
+Image name = ../db/MITtallbuilding/image_0305.jpg / Predicted class = 9 / Actual class = 16732576.
+950
+951
+952
+953
+954
+955
+Image name = ../db/MITtallbuilding/image_0130.jpg / Predicted class = 9 / Actual class = 16732576.
+956
+957
+958
+Image name = ../db/MITtallbuilding/image_0141.jpg / Predicted class = 9 / Actual class = 16732576.
+959
+Image name = ../db/MITtallbuilding/image_0092.jpg / Predicted class = 9 / Actual class = 16732576.
+960
+Image name = ../db/MITtallbuilding/image_0146.jpg / Predicted class = 9 / Actual class = 16732576.
+961
+962
+Image name = ../db/MITtallbuilding/image_0349.jpg / Predicted class = 9 / Actual class = 16732576.
+963
+Image name = ../db/MITtallbuilding/image_0207.jpg / Predicted class = 9 / Actual class = 16732576.
+964
+965
+Image name = ../db/MITtallbuilding/image_0078.jpg / Predicted class = 9 / Actual class = 16732576.
+966
+967
+Image name = ../db/MITtallbuilding/image_0098.jpg / Predicted class = 9 / Actual class = 16732576.
+968
+Image name = ../db/MITtallbuilding/image_0075.jpg / Predicted class = 9 / Actual class = 16732576.
+969
+Image name = ../db/MITtallbuilding/image_0014.jpg / Predicted class = 9 / Actual class = 16732576.
+970
+Image name = ../db/MITtallbuilding/image_0329.jpg / Predicted class = 9 / Actual class = 16732576.
+971
+Image name = ../db/MITtallbuilding/image_0257.jpg / Predicted class = 9 / Actual class = 16732576.
+972
+973
+Image name = ../db/PARoffice/image_0163.jpg / Predicted class = 10 / Actual class = 16732576.
+974
+975
+976
+977
+978
+979
+980
+981
+Image name = ../db/PARoffice/image_0034.jpg / Predicted class = 10 / Actual class = 16732576.
+982
+983
+984
+Image name = ../db/PARoffice/image_0214.jpg / Predicted class = 10 / Actual class = 16732576.
+985
+986
+987
+Image name = ../db/PARoffice/image_0070.jpg / Predicted class = 10 / Actual class = 16732576.
+988
+989
+Image name = ../db/PARoffice/image_0063.jpg / Predicted class = 10 / Actual class = 16732576.
+990
+991
+Image name = ../db/PARoffice/image_0206.jpg / Predicted class = 10 / Actual class = 16732576.
+992
+993
+Image name = ../db/PARoffice/image_0081.jpg / Predicted class = 10 / Actual class = 16732576.
+994
+Image name = ../db/PARoffice/image_0018.jpg / Predicted class = 10 / Actual class = 16732576.
+995
+996
+997
+Image name = ../db/PARoffice/image_0194.jpg / Predicted class = 10 / Actual class = 16732576.
+998
+999
+1000
+1001
+1002
+1003
+1004
+1005
+Image name = ../db/PARoffice/image_0152.jpg / Predicted class = 10 / Actual class = 16732576.
+1006
+1007
+1008
+1009
+1010
+1011
+1012
+1013
+1014
+1015
+1016
+Image name = ../db/PARoffice/image_0014.jpg / Predicted class = 10 / Actual class = 16732576.
+1017
+1018
+Image name = ../db/PARoffice/image_0215.jpg / Predicted class = 10 / Actual class = 16732576.
+1019
+1020
+1021
+1022
+Image name = ../db/PARoffice/image_0086.jpg / Predicted class = 10 / Actual class = 16732576.
+1023
+1024
+Image name = ../db/PARoffice/image_0174.jpg / Predicted class = 10 / Actual class = 16732576.
+1025
+1026
+1027
+1028
+1029
+1030
+1031
+1032
+1033
+1034
+Image name = ../db/PARoffice/image_0067.jpg / Predicted class = 10 / Actual class = 16732576.
+1035
+1036
+1037
+1038
+1039
+1040
+1041
+1042
+ERR rate 0.35187
+Predict in68.3074s
+cf size
+13
+
+Matrice de confusion
+
+./training learning_3_2 vocabulary.xml svm.xml 300 0.5 1000

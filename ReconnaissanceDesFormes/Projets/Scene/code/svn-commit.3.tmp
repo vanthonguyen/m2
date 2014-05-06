@@ -1,0 +1,17 @@
+
+--This line, and those below, will be ignored--
+
+M    vocabulary.xml
+M    TestScene.cpp
+M    test_3_0
+M    test_3_1
+M    test_3_2
+M    create_csv.sh
+M    docs/report.tex
+AM   docs/findc.png
+M    Training.cpp
+M    findgammac.sh
+M    learning_3_0
+M    learning_3_1
+M    learning_3_2
+M    svm.xml

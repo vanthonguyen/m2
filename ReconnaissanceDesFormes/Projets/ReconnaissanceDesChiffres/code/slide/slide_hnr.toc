@@ -1,0 +1,14 @@
+\beamer@endinputifotherversion {3.27pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Rappel de KNN et SVM}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{KNN}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{SVM}{7}{0}{2}
+\beamer@sectionintoc {3}{Exp\IeC {\'e}rimentation}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Crit\IeC {\`e}res d'\IeC {\'e}valuation}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{M\IeC {\'e}thode KNN}{12}{0}{3}
+\beamer@subsectionintoc {3}{3}{M\IeC {\'e}thode SVM}{14}{0}{3}
+\beamer@sectionintoc {4}{R\IeC {\'e}sultats}{17}{0}{4}
+\beamer@subsectionintoc {4}{1}{M\IeC {\'e}thode KNN}{17}{0}{4}
+\beamer@subsectionintoc {4}{2}{M\IeC {\'e}thode SVM}{19}{0}{4}
+\beamer@subsectionintoc {4}{3}{Comparaison entre KNN et SVM}{21}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{23}{0}{5}

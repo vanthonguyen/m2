@@ -1,0 +1,103 @@
+
+-------------10-0.005-------------
+Begin clustering ...
+Clustered in 757.52s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 752.834s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 747.245s
+ERR rate 0.423285
+-------------10-0.05-------------
+Begin clustering ...
+Clustered in 752.12s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 746.847s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 733.379s
+ERR rate 0.423285
+-------------10-0.1-------------
+Begin clustering ...
+Clustered in 743.768s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 747.582s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 735.259s
+ERR rate 0.423285
+-------------10-0.5-------------
+Begin clustering ...
+Clustered in 749.068s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 751.605s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 732.552s
+ERR rate 0.423285
+-------------10-2.0-------------
+Begin clustering ...
+Clustered in 748.796s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 746.985s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 734.521s
+ERR rate 0.423285
+-------------100-0.005-------------
+Begin clustering ...
+Clustered in 744.59s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 748.629s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 736.752s
+ERR rate 0.423285
+-------------100-0.05-------------
+Begin clustering ...
+Clustered in 744.705s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 748.872s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 739.035s
+ERR rate 0.423285
+-------------100-0.1-------------
+Begin clustering ...
+Clustered in 746.362s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 747.93s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 734.257s
+ERR rate 0.423285
+-------------100-0.5-------------
+Begin clustering ...
+Clustered in 749.659s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 751.56s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 738.892s
+ERR rate 0.423285
+-------------100-2.0-------------
+Begin clustering ...
+Clustered in 747.815s
+ERR rate 0.42623
+Begin clustering ...
+Clustered in 750.666s
+ERR rate 0.428571
+Begin clustering ...
+Clustered in 741.624s
+ERR rate 0.423285
+-------------200-0.005-------------
+Begin clustering ...
