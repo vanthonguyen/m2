@@ -1,0 +1,810 @@
+\documentclass[french,12pt,a4paper,oneside,notitlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[french]{babel}
+\usepackage{xcolor}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{fourier}
+\usepackage{hyperref}   % links im text
+\usepackage{enumerate}  % for advanced numbering of lists
+\usepackage{fancyhdr}  
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{mathtools}
+%\usepackage{amsmath}   %arraycolsep
+\usepackage[protrusion=true,expansion=true]{microtype}
+\makeatletter
+\definecolor{bl}{rgb}{0,0.2,0.6}
+\let\LaTeX@startsection\@startsection
+%\renewcommand{\@startsection}[6]{\LaTeX@startsection%
+%{#1}{#2}{#3}{#4}{#5}{\color{bl}\raggedright #6}}
+\renewcommand{\thesection}{\@arabic\c@section}{\color{bl}}
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {-3.25ex\@plus -1ex \@minus -.2ex}%
+  {1.5ex \@plus .2ex}%
+  {\normalfont\normalsize\bfseries}}
+\makeatother
+
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{%
+  \parbox{\textwidth}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+%\lstset{frame=lrb,xleftmargin=\fboxsep,xrightmargin=-\fboxsep}
+
+\lstset{
+ 	language=C++,
+% 	captionpos=b,
+ 	tabsize=3,
+ 	frame=single,
+ 	xleftmargin=\fboxsep,
+ 	xrightmargin=-\fboxsep,
+ 	keywordstyle=\color{blue},
+ 	commentstyle=\color{gray},
+ 	stringstyle=\color{green},
+	extendedchars=true,
+% 	numbers=left,
+ 	numberstyle=\tiny,
+ 	numbersep=5pt,
+ 	breaklines=true,
+ 	showstringspaces=false,
+ 	basicstyle=\footnotesize\ttfamily,
+ 	emph={label},
+ 	inputencoding=utf8,
+ 	extendedchars=true, 	
+ 	  literate=%
+ 	  {é}{{\'{e}}}1
+ 	  {è}{{\`{e}}}1
+ 	  {ê}{{\^{e}}}1
+ 	  {ë}{{\¨{e}}}1
+ 	  {û}{{\^{u}}}1
+ 	  {ù}{{\`{u}}}1
+ 	  {â}{{\^{a}}}1
+ 	  {à}{{\`{a}}}1
+ 	  {î}{{\^{i}}}1
+ 	  {ç}{{\c{c}}}1
+ 	  {Ç}{{\c{C}}}1
+ 	  {É}{{\'{E}}}1
+ 	  {Ê}{{\^{E}}}1
+ 	  {À}{{\`{A}}}1
+ 	  {Â}{{\^{A}}}1
+ 	  {Î}{{\^{I}}}1	
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\yourName{NGUYEN Van Tho}
+\newcommand\yourKeywords{TP,Vision Par Ordinateur}
+\newcommand\yourNumber{1}
+\newcommand\yourTitle{\Huge Vision par Ordinateur\\ \Large TP 2 : Reconnaissance d'objets 
+avec le descripteur SIFT
+}
+
+\hypersetup { 
+  pdfauthor   = {\yourName}, 
+  pdfkeywords = {\yourKeywords}, 
+  pdftitle    = {\yourTitle} 
+}
+
+
+\begin{document}
+%\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+\author{\yourName}
+\title{\yourTitle}
+\maketitle
+\section{Fonctionnement du programme}
+Dans ce tp j'utilise les programmes écrit par David Lowe pour calculer les points 
+d'intérêt et pour mettre en correspondance entre les images de tests et les images de 
+référence.
+
+J'ai écrit plusieurs programmes en shell et python pour faciliter et pour faire 
+expérimentation automatiquement.
+\subsection{Conversion des images png en.jpg}
+Ce script shell permet de convertir les images dans un répertoire en pgm:
+\begin{lstlisting}
+  $./toPgm.sh  repertoire-png repertoire-pgm
+\end{lstlisting}
+Où:
+\begin{itemize}
+ \item repertoire-png est le répertoire des images entrées, ce répertoire peut avoir des 
+sous-répertoires
+ \item repertoire-pgm est le répertoire des images sorties (images en format pgm)
+\end{itemize}
+
+\subsection{Division des images en deux parties}
+  Pour créer les images de test et les images de référence, j'ai écrit un script qui 
+permet de séparer les images dans un répertoire en deux parties. Chaque image a 50\% de 
+chance pour aller à l'ensemble de test et 50 \% de chance d'aller à l'ensemble de 
+référence.
+
+\begin{lstlisting}
+  $./createRefTest.sh repertoire-test repertoire-reference
+\end{lstlisting}
+Où:
+\begin{itemize}
+ \item repertoire-test est le répertoire contenant les images de test 
+ \item repertoire-reference est le répertoire contenant les images de référence
+\end{itemize}
+
+\subsection{Création des points d'intérêt (les clés de SIFT)}
+Un script shell est utilisé pour transformer les images en les descripteurs SIFT. Ce 
+script utilise le programme "sift" de David Lowe. Il calcule le descripteur de chaque 
+image est stocker dans un nouveau répertoire (ajouter ref au derrière du répertoire de 
+référence). Les fichiers de descripteur sont stockés indépendants (Un fichier pour chaque 
+image)
+\begin{lstlisting}
+  $./calculKey.sh repertoire-reference
+\end{lstlisting}
+Où:
+\begin{itemize}
+ \item repertoire-reference est le répertoire contenant les images de référence
+\end{itemize}
+
+\subsection{Mise en correspondance}
+Pour mettre en correspondance j'utilise la distance Euclidienne
+entre les deux vecteurs de SIFT comme l'algorithme proposé par David Lowe.
+\begin{center}
+	$ratio = \frac{d_{plus\_proche}}{d_{deuxieme plus proche}} < seuil$
+\end{center}
+
+Dans ce tp j'ai choisi le seuil = 0.9 et = 0.6 (le seuil choisit par auteur est 0.6). 
+
+Pour calculer le score de la correspondance, j'utilise cette formule
+\begin{center}
+ $score = \frac{\#  correspondances\ réussies}{\# descripteurs\ de\ l'image\ de\ test}$
+\end{center}
+
+Cette formule est différence du formule proposée dans l'annonce du TP. Effectivement, j'ai essayé
+les deux formules et trouvé que ma formule a rendu le meilleur résultat.
+
+La commande pour calculer la correspondance entre une image inconnue et les références 
+\begin{lstlisting}
+  $./match.sh image-inconnue-pgm repertoire-des-keys-references 
+\end{lstlisting}
+Où:
+\begin{itemize}
+ \item image-inconnue-pgm est l'image dans la base de test en format pgm
+ \item repertoire-des-keys-references est le répertoire contenant les keys des images de références 
+\end{itemize}
+
+À partir de ces scores j'utilise un simple algorithme pour déterminer la classe auquel l'image de test appartient. 
+La graphique ci-dessous est le diagramme d'interaction de l'algorithme
+\begin{center}
+\includegraphics[width=15cm]{inter.jpg}
+\end{center}
+
+Pour faire automatiquement cette tâche, on peut utiliser cette commande:
+\begin{lstlisting}
+  $./matchAll.sh repertoire-image-inconnue-pgm/\* repertoire-des-keys-references 
+\end{lstlisting}
+Où:
+\begin{itemize}
+ \item repertoire-image-inconnue-pgm est le répertoire contenant les images de test en format pgm
+ \item repertoire-des-keys-references est le répertoire contenant les keys des images de références 
+\end{itemize}
+
+Par exemple, pour calculer toutes les correspondances des images dans le répertoire 'coil':
+\begin{lstlisting}
+$./matchAll.sh coil/\* repertoire-des-keys-references
+\end{lstlisting}
+Et pour calculer toutes les correspondances des images de classe 1 dans le répertoire 'coil':
+\begin{lstlisting}
+$./matchAll.sh coil/1_\* repertoire-des-keys-references
+\end{lstlisting}
+
+\subsection{Post-traitement}
+\subsubsection{Calcul de matrice de confusion }
+Pour calculer la matrice de confusion, j'ai écrit un petit programme en Python:
+\begin{lstlisting}
+$python2 calculConfusionMatrix.py taille-de-matrice fichier-log_fichier-matrix
+\end{lstlisting}
+Où:
+\begin{itemize}
+ \item taille-de-matrice est le nombre de colonne de la matrice et égale au nombre de classe
+ \item fichier-log est le résultat de l'étape précédante (l'étape de mise en correspondance) 
+ \item fichier-matrice est le fichier sortie, un fichier texte contenant la matrice
+\end{itemize}
+\subsection{Image de la matrice  de confusion}
+Dans le cas il y a beaucoup de classe, j'utilise une image pour représenter la matrice de confusion.
+Cette image est créée pas un programme en C plus plus qui va lire le résultat de l'étape ci-dessus et le transformer en image.
+\begin{lstlisting}
+$./text2image
+\end{lstlisting}
+\clearpage
+\subsection{Structure de répertoire de programme}
+\begin{lstlisting}[label=structure,caption=Structure de répertoire du programme]
+ TP2
+	calculConfusionMatrix.py
+	calculKey.sh
+	createRefTest.sh
+	extrait.sh
+	extraitcoil.sh
+	genCor.sh
+	genCorAloi.sh
+	match2.sh
+	matchAll.sh
+	matchAllAloi.sh
+	matchaloi.sh
+	sortResult.sh
+	toPgm.sh
+	classifier.py
+	classifieraloi.py
+	calculConfusionMatrix.py
+	match
+	sift
+	resultats/
+	coil-100key/
+	coil-100test/
+\end{lstlisting}
+
+\subsection{Compiler le programme sous linux}
+\begin{lstlisting}
+  $make 
+  $make text2image
+\end{lstlisting}
+
+\clearpage
+\section{Expérimentation et Résultat}
+%\subsection{Choix des bases de données}
+J'ai choisi 2 entre 3 base de données proposées dans l'annonce de TP (COIL 100 et ALOI) afin de tester la performance de méthode proposée.
+La base de données COIL-100 de Columbia University, cette base de données a 100 classes d'objet, chaque classe a 72 images. J'ai expérimenté sur 
+les données complets de cette base de données. La base de données est divisée en deux parties: partie de test et partie d'apprentisage. Puisque 
+les images sont choisies aléatoirement, les deux parties ne contient pas le même nombre d'image: 3578 images de test et 3622 images d'apprentisage.
+Pour accélération l'expérimentation, je l'a lancé parallèlement avec le niveau de parallélisme de 4. Le temps total pour finir l'expérimentation est
+environ 12 heures. Le résultat de l'expérimentation est assez grand, sa matrice de confusion donc ne peut pas être affichée dans ce rapport. Par contre,
+un extrait de taille 30 de cette matrice est affiché dans le tableau 1 (Vous pouvez voir les données complètes dans le répertoire de code, dans le fichier 
+finalResultCoil). Le taux de vrais positifs de cette expérimentation est 85.6\%.
+
+La deuxième base de données est la base de données de ALOI (version téléchargée directement sur le site de l'Amsterdam Library). Cette base de données
+contient 72000 images de 1000 classes. J'ai estimé le temps pour expérimenter cette base de données est environ 6 jours complets. Alors, pour être faisable
+j'ai expérimenté sur un extrait de 30 premières classes de la base de données. La méthode d'expérimentation est la même de première expérimentation.
+Le résultat (matrice de confusion) est affiché dans le tableau 2.  Le taux de vrais positifs de cette expérimentation est 84.2\%.
+
+J'ai expérimenté aussi sur les extraits de ces deux bases de données avec le seuil égale 0.6 (Le choix original de l'auteur). Le résultat est moins bien que
+celui dont seuil est 0.9: le taux de vrais positifs de l'extrait de COIL-100 est 84.9\%, de l'extrait de ALOI est 37.4 \%. Pour maintenir la concision du rapport, je n'affiche pas dans cette partie. 
+Par contre, vous pouvez trouver les matrices de confusion dans l'annexe du rapport.
+
+\begin{table}[!ht]
+	\begin{center}
+	\resizebox{\textwidth}{!}{%
+	    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+&1&2&3&4&5&6&7&8&9&10&11&12&13&14&15&16&17&18&19&20&21&22&23&24&25&26&27&28&29&30\\
+\hline
+1&36&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+2&0&6&1&1&0&0&0&0&1&0&0&0&0&0&0&0&0&1&0&0&0&0&0&0&1&0&0&0&0&0\\
+\hline
+3&0&0&34&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+4&0&0&0&30&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&1&0&0&0&0&0&0&0&0&0\\
+\hline
+5&0&0&0&0&38&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&2&0&0&0&0&0&0\\
+\hline
+6&0&0&0&0&0&40&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+7&0&0&0&0&0&0&35&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+8&0&0&0&0&0&0&0&30&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+9&0&0&0&0&0&0&0&0&33&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+10&0&0&0&0&0&0&0&0&0&19&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+11&0&0&0&0&0&0&0&1&0&0&23&0&0&0&0&0&0&0&0&0&0&0&2&0&0&0&0&0&0&0\\
+\hline
+12&0&0&0&0&0&0&0&0&1&0&0&20&0&0&0&0&0&1&0&1&0&1&0&1&0&0&1&0&0&0\\
+\hline
+13&0&0&0&0&0&0&0&0&0&0&0&0&24&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+14&0&0&0&0&0&0&0&0&0&0&0&0&0&33&0&0&0&0&0&2&0&0&0&0&0&0&0&0&0&0\\
+\hline
+15&0&0&0&0&0&0&0&0&0&0&0&0&0&0&30&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+16&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&20&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+17&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&29&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+18&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&33&0&1&0&0&0&0&0&1&0&0&0&0\\
+\hline
+19&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&36&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+20&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&29&0&0&0&0&0&0&0&0&0&0\\
+\hline
+21&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&26&0&0&0&0&0&1&0&0&0\\
+\hline
+22&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&24&0&0&0&0&0&0&0&0\\
+\hline
+23&0&0&0&0&0&0&0&4&0&0&0&0&0&0&0&0&0&0&0&0&0&0&33&0&0&0&0&0&0&0\\
+\hline
+24&0&0&0&0&2&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&33&0&0&0&0&0&0\\
+\hline
+25&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&38&0&0&0&0&0\\
+\hline
+26&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&40&0&0&0&0\\
+\hline
+27&0&0&0&0&0&1&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&1&1&0&0&33&0&0&0\\
+\hline
+28&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&39&0&0\\
+\hline
+29&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&27&0\\
+\hline
+30&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&31\\
+\hline
+	    \end{tabular}
+	}
+	\caption {Extrait de la matrice de confusion de la base de données Coil\\
+	\hspace*{1.7cm}  Première ligne est les noms des classes de base de référence\\
+	\hspace*{1.7cm}  Première colonne est les noms des classes de test}
+	\end{center}
+\end{table}
+\begin{figure}[h!]
+\begin{center}
+ \includegraphics[width = 7cm]{confusionMatrixCoil.jpg}
+\end{center}
+ \caption{Image de la matrice de confusion de la base de données COIL 100}
+\end{figure}
+\clearpage
+\begin{table}[!ht]
+	\begin{center}
+	\resizebox{\textwidth}{!}{%
+	    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+&1&2&3&4&5&6&7&8&9&10&11&12&13&14&15&16&17&18&19&20&21&22&23&24&25&26&27&28&29&30\\
+\hline
+1 & 31 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+2 & 0 & 27 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+3 & 0 & 0 & 0 & 2 & 1 & 0 & 0 & 5 & 19 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 3 \\
+\hline
+4 & 0 & 0 & 0 & 34 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+5 & 0 & 0 & 0 & 0 & 32 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 19 & 6 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 2 & 3 & 2 & 0 & 0 & 0 & 0 \\
+\hline
+7 & 0 & 0 & 0 & 0 & 0 & 0 & 41 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 35 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+9 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 37 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+10 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 32 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+11 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 33 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 32 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+13 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 34 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+14 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 43 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+15 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 33 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+16 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 4 & 6 & 0 & 2 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 1 & 0 & 0 & 1 & 4 & 1 & 1 & 2 & 0 & 1 \\
+\hline
+17 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 31 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+18 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 32 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+19 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 30 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\hline
+20 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 38 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+21 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 7 & 1 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 1 & 0 & 0 & 0 & 4 & 0 & 2 & 0 & 0 \\
+\hline
+22 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 31 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+23 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 34 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+24 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 33 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+25 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 33 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+26 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 26 & 0 & 0 & 0 & 0 \\
+\hline
+27 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 6 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 25 & 1 & 0 & 0 \\
+\hline
+28 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 3 & 1 & 0 & 0 & 0 & 0 & 0 & 3 & 0 & 0 & 2 & 4 & 0 & 0 & 0 & 0 & 2 & 0 & 17 & 0 & 0 \\
+\hline
+29 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 31 & 0 \\
+\hline
+30 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 43 \\
+\hline
+	    \end{tabular}
+	}
+	\end{center}
+	\caption {La matrice de confusion de la base de données Aloi\\
+	\hspace*{1.7cm}  Première ligne est les noms des classes de base de référence\\
+	\hspace*{1.7cm}  Première colonne est les noms des classes de test}
+\end{table}
+
+\section{Réponses aux questions}
+Voir les matrices de confusion et l'image de matrice de confusion on constate que dans la plupart de cas, le programme 
+trouve bien la classe à laquelle l'image de test appartient. En fait, le taux de bien reconnaissance est 85.6\% pour la base de 
+données COIL-100 et 84.2\% pour l'extrait de la base de données ALOI. Ces taux sont assez grands pour un algorithme qui ne compte pas
+la forme des objets. Cependant, il y a des cas l'algorithme marche très mal, on va examiner les classes sur lesquelles l'algorithme marche
+bien et pas bien. 
+
+Dans la base de données, nous allons prendre les objets 1, 3 pour les bons examples et les objets 2, 35 pour les mauvais exemples.
+
+Le resultat de l'extrait de la base de données ALOI est similaire à cequi de la base de données COIL-100. Le programme peut reconnaître la
+plupart des images. Cependant, il n'arrive pas à reconnaître les objets 3, 6, 16. Nous allons prendre ces objets pour les mauvais exemples
+et aussi prendre les objets 5, 7 comme des bons exemples.
+
+Observer les bons et les mauvais exemples ci-dessus, on remarque que les objets avec plus de points d'intérêt sont bien reconnus. En autre terme,
+ces objets ont plus de caractéristiques, donc il est plus facile de les distinguer aux autre objets. En fait, l'objet 1\_\_10 (figure 2)
+a 101 descripteurs, l'objet 3\_\_15 (figure 3) a 46 descripteurs, l'objet 7\_r25 (figure 4) a 196 descripteurs et l'objet 25\_r255 (figure 5)
+a 255 descripteurs.
+%il y a beaucoup de correspondances entre l'image de test et les image de référence. 
+Par contre, les objets avec qui ont moins de descripteurs sont difficile de reconnaître. Ils sont souvent reconnus incorrectement. Dans nos 
+mauvais exemples, l'objet 2\_\_115 a seulement 7 descripteurs, l'objet 35\_\_200 a aussi 7 descripteurs, l'objet  3\_r50 a seulement 3 descripteurs et 
+objet 6\_r350 a 6 descripteurs.
+
+On peut expliquer ces phénomènes par le fait que si la classe des objets est décrit par beaucoup de descripteurs, il y a une grande possibilité
+qu'elle a aussi des caractéristiques distinguées. Donc quand on comparer une image de test avec une trentaine d'images d'apprentisage, la chance
+qu'elles sont correspondantes est assez grande. Bien sur, il y a aussi des fautes, cependant dans la plupart de cas l'algorithme que je propose 
+pour choisir la classe peut rejeter les erreurs. Par exemple, dans la figure 3, il y a 4 erreurs mais l'algorithme choit la bonne classe. On voit que
+les objets qui sont bien reconnus ont beaucoup de coins, de texte ou des formes complexes.
+Dans les mauvais exemples, chaque image a pas beaucoup de descripteurs (moins de 10), elles sont des images des objets simples et il n'y a pas
+beaucoup de sous-forme. C'est pourquoi ces formes sont facile de faussement reconnaître.
+
+{\setlength{\arraycolsep}{0.03cm}
+\begin{figure}[ht]
+	\begin{center}$
+		\begin{array}[h]{cccccccccc}
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj1__15.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj1__5.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj1__190.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj1__185.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj1__355.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj1__30.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj1__350.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj1__35.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj84__140.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj1__10/obj1__10-obj1__175.jpg}\\
+1\_\_15&1\_\_5 &1\_\_190&1\_\_185 &1\_\_355 &1\_\_30 &1\_\_350 &1\_\_35 &84\_\_140 &1\_\_175 \\
+0.73 &0.71 &0.57 &0.53 &0.52 &0.43 &0.39 &0.38 &0.36 &0.35
+		\end{array}$
+	\end{center}
+	\caption{10 meilleures correspondances à l'objet 1\_\_10 de la base de données COIL-100\\
+	\hspace*{1.7cm} Deuxième ligne: Nom de l'image correspondant\\
+	\hspace*{1.7cm} Troisième ligne: le score}
+\end{figure}
+}
+{\setlength{\arraycolsep}{0.03cm}
+\begin{figure}[ht]
+	\begin{center}$
+		\begin{array}[h]{cccccccccc}
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj3__350.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj3__30.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj3__130.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj3__35.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj3__335.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj64__220.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj3__0.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj78__240.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj96__165.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj3__15/obj3__15-obj76__120.jpg}\\
+3\_\_350 &3\_\_30 &3\_\_130 &3\_\_35 &3\_\_335 &64\_\_220 &3\_\_0 &78\_\_240 &96\_\_165 &76\_\_120 \\
+0.58&0.56&0.56&0.54&0.54&0.52&0.52&0.50&0.45&0.45&
+		\end{array}$
+	\end{center}
+	\caption{10 meilleures correspondances à l'objet 3\_\_15 de la base de données COIL-100\\
+	\hspace*{1.7cm} Deuxième ligne: Nom de l'image correspondant\\
+	\hspace*{1.7cm} Troisième ligne: le score}
+\end{figure}
+}
+
+{\setlength{\arraycolsep}{0.03cm}
+\begin{figure}[ht]
+	\begin{center}$
+		\begin{array}[h]{cccccccccc}
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-7_r20.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-7_r40.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-7_r45.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-7_r50.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-7_r55.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-7_r60.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-7_r350.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-7_r340.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-7_r195.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/7_r25/7_r25-1_r15.jpg}\\
+7\_r20 &7\_r40 &7\_r45 &7\_r50 &7\_r55 &7\_r60 &7\_r350 &7\_r340 &7\_r195 &1\_r15 \\
+0.80&0.64&0.49&0.42&0.40&0.36&0.36&0.28&0.28&0.28
+		\end{array}$
+	\end{center}
+	\caption{10 meilleures correspondances à l'objet 7\_r25 de la base de données ALOI\\
+	\hspace*{1.7cm} Deuxième ligne: Nom de l'image correspondant\\
+	\hspace*{1.7cm} Troisième ligne: le score}
+\end{figure}
+}
+
+{\setlength{\arraycolsep}{0.03cm}
+\begin{figure}[ht]
+	\begin{center}$
+		\begin{array}[h]{cccccccccc}
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r260.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r250.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r245.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r270.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r230.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r335.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r165.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r240.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r200.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/20_r255/20_r255-20_r175.jpg}\\
+20\_r260 &20\_r250 &20\_r245 &20\_r270 &20\_r230 &20\_r335 &20\_r165 &20\_r240 &20\_r200 &20\_r175 \\
+0.57&0.56&0.41&0.30&0.30&0.29&0.29&0.28&0.28&0.27
+		\end{array}$
+	\end{center}
+	\caption{10 meilleures correspondances à l'objet 20\_r255 de la base de données ALOI\\
+	\hspace*{1.7cm} Deuxième ligne: Nom de l'image correspondant\\
+	\hspace*{1.7cm} Troisième ligne: le score}
+\end{figure}
+}
+%%begin bad example
+{\setlength{\arraycolsep}{0.03cm}
+\begin{figure}[ht]
+	\begin{center}$
+		\begin{array}[h]{cccccccccc}
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj83__160.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj78__50.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj57__5.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj57__0.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj40__280.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj2__170.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj97__270.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj95__230.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj8__110.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj2__115/obj2__115-obj89__330.jpg}\\
+83\_\_160 &78\_\_50 &57\_\_5 &57\_\_0 &40\_\_280 &2\_\_170 &97\_\_270 &95\_\_230 &8\_\_110 &89\_\_330 \\
+0.85&0.85&0.85&0.85&0.85&0.85&0.71&0.71&0.71&0.71
+		\end{array}$
+	\end{center}
+	\caption{10 meilleures correspondances à l'objet 2\_\_115 de la base de données COIL-100\\
+	\hspace*{1.7cm} Deuxième ligne: Nom de l'image correspondant\\
+	\hspace*{1.7cm} Troisième ligne: le score}
+\end{figure}
+}
+
+{\setlength{\arraycolsep}{0.03cm}
+\begin{figure}[ht]
+	\begin{center}$
+		\begin{array}[h]{cccccccccc}
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj95__40.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj8__220.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj87__15.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj6__235.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj46__210.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj44__30.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj42__265.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj3__185.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj38__30.jpg}&
+\includegraphics[width=1.5cm]{../images/outcoil/obj35__200/obj35__200-obj27__345.jpg}\\
+95\_\_40 &8\_\_220 &87\_\_15 &6\_\_235 &46\_\_210 &44\_\_30 &42\_\_265 &3\_\_185 &38\_\_30 &27\_\_345 \\
+0.85&0.85&0.85&0.85&0.85&0.85&0.85&0.85&0.85&0.85
+		\end{array}$
+	\end{center}
+	\caption{10 meilleures correspondances à l'objet 35\_\_200 de la base de données COIL-100\\
+	\hspace*{1.7cm} Deuxième ligne: Nom de l'image correspondant\\
+	\hspace*{1.7cm} Troisième ligne: le score}
+\end{figure}
+}
+
+{\setlength{\arraycolsep}{0.03cm}
+\begin{figure}[ht]
+	\begin{center}$
+		\begin{array}[h]{cccccccccc}
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-8_r350.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-8_r195.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-8_r105.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-5_r255.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-5_r165.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-5_r125.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-4_r355.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-4_r35.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-4_r235.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/3_r50/3_r50-4_r230.jpg}\\
+8\_r350 &8\_r195 &8\_r105 &5\_r255 &5\_r165 &5\_r125 &4\_r355 &4\_r35 &4\_r235 &4\_r230 \\
+1.00&1.00&1.00&1.00&1.00&1.00&1.00&1.00&1.00&1.00
+		\end{array}$
+	\end{center}
+	\caption{10 meilleures correspondances à l'objet 3\_r50 de la base de données COIL-100\\
+	\hspace*{1.7cm} Deuxième ligne: Nom de l'image correspondant\\
+	\hspace*{1.7cm} Troisième ligne: le score}
+\end{figure}
+}
+
+{\setlength{\arraycolsep}{0.03cm}
+\begin{figure}[ht]
+	\begin{center}$
+		\begin{array}[h]{cccccccccc}
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-9_r230.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-9_r200.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-30_r130.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-27_r185.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-26_r230.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-23_r185.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-22_r130.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-21_r350.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-1_r310.jpg}&
+\includegraphics[width=1.5cm]{../images/outaloi/6_r350/6_r350-1_r220.jpg}\\
+9\_r230 &9\_r200 &30\_r130 &27\_r185 &26\_r230 &23\_r185 &22\_r130 &21\_r350 &1\_r310 &1\_r220 \\
+0.83&0.83&0.83&0.83&0.83&0.83&0.83&0.83&0.83&0.83
+		\end{array}$
+	\end{center}
+	\caption{10 meilleures correspondances à l'objet 6\_r350 de la base de données COIL-100\\
+	\hspace*{1.7cm} Deuxième ligne: Nom de l'image correspondant\\
+	\hspace*{1.7cm} Troisième ligne: le score}
+\end{figure}
+}
+
+\clearpage
+\section{Conclusion}
+Dans ce TP j'ai implémenté un algorithme se basant sur le travail de David Lowe sur la méthode SIFT pour reconnaître des objets. J'ai implémenté
+plusieurs outils pour faciliter (automatiquement) le processus et traiter les données après le processus de reconnaissance. J'ai expérimenté deux base de données d'image proposées dans l'annonce de TP. J'ai expérimenté avec différent seuil pour la mise en correspondance pour
+trouver la meilleur.
+
+Le résultat de mes expérimentations montre que la méthode SIFT rende des résultats assez bien avec les deux bases de données. De plus, la choix de seuil
+et l'algorithme décidant la classe de objet peut influencer au résultat final.
+
+Néanmoins, je trouve que cette méthode ne compte que les caractéristiques locales des objets mais pas au niveau global comme la pose de l'objet, la relation entre les descripteurs. Donc, on peut encore améliorer 
+la performance de SIFT en utilisant en même temps d'autre méthode telle qu'un système de vote utilisé la transformée de Hough.
+
+\clearpage
+\section{Annexe}
+\begin{table}[!ht]
+	\begin{center}
+	\resizebox{\textwidth}{!}{%
+	    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+&1&2&3&4&5&6&7&8&9&10&11&12&13&14&15&16&17&18&19&20&21&22&23&24&25&26&27&28&29&30\\
+\hline
+1&72&0&2&0&0&1&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+2&0&36&1&0&0&0&0&1&0&0&0&0&0&0&0&0&0&0&0&0&0&1&0&0&0&0&0&0&0&0\\
+\hline
+3&0&0&34&2&1&0&0&5&19&0&1&0&0&0&0&0&0&0&0&0&1&0&1&0&0&0&1&0&0&3\\
+\hline
+4&0&0&0&34&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+5&0&0&0&0&32&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+6&0&0&0&0&0&0&0&19&6&0&1&0&0&0&0&0&0&0&1&0&0&0&0&2&3&2&0&0&0&0\\
+\hline
+7&0&0&0&0&0&0&41&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+8&0&0&0&0&0&0&0&35&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+9&0&0&0&0&0&0&0&0&37&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+10&0&0&0&0&0&0&0&0&0&32&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+11&0&0&0&0&0&0&0&0&0&0&33&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+12&0&0&0&0&0&0&0&0&0&0&0&32&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+13&0&0&0&0&0&0&0&0&1&1&0&0&34&0&0&0&0&0&0&0&0&0&1&0&0&0&0&0&0&0\\
+\hline
+14&0&0&0&0&0&0&0&0&0&0&0&0&0&43&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+15&0&0&0&0&0&0&0&0&0&0&0&0&0&0&33&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+16&0&1&0&1&0&0&0&4&6&0&2&1&2&0&0&0&0&0&2&0&1&0&0&1&4&1&1&2&0&1\\
+\hline
+17&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&31&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+18&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&32&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+19&0&0&0&0&0&0&0&0&0&0&2&0&0&0&0&0&0&0&30&0&0&0&0&0&0&1&0&0&0&0\\
+\hline
+20&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&38&0&0&0&0&0&0&0&0&0&0\\
+\hline
+21&0&0&0&0&0&0&0&0&0&7&1&2&0&0&0&0&0&0&0&0&15&1&0&0&0&4&0&2&0&0\\
+\hline
+22&0&0&0&0&0&0&0&0&0&0&0&0&1&0&0&0&0&0&0&0&0&31&0&0&0&0&0&0&0&0\\
+\hline
+23&0&0&0&0&0&0&0&0&0&2&1&0&0&0&1&0&0&0&0&0&0&0&34&0&0&0&0&0&0&0\\
+\hline
+24&0&0&0&0&0&0&0&2&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&33&0&0&0&0&0&0\\
+\hline
+25&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&33&0&0&0&0&0\\
+\hline
+26&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&26&0&0&0&0\\
+\hline
+27&0&0&0&0&0&0&0&0&1&0&6&0&0&0&0&1&0&0&0&0&0&0&0&1&0&0&25&1&0&0\\
+\hline
+28&0&1&0&0&0&0&0&1&1&3&1&0&0&0&0&0&3&0&0&2&4&0&0&0&0&2&0&17&0&0\\
+\hline
+29&0&0&0&0&0&0&0&4&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&1&0&1&0&0&31&0\\
+\hline
+30&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&43\\
+\hline
+	    \end{tabular}
+	}
+	\end{center}
+	\caption {La matrice de confusion de la base de données COIL-100 avec seuil = 0.6\\
+	\hspace*{1.7cm}  Première ligne est les noms des classes de base de référence\\
+	\hspace*{1.7cm}  Première colonne est les noms des classes de test}
+\end{table}
+\clearpage
+\begin{table}[!ht]
+	\begin{center}
+	\resizebox{\textwidth}{!}{%
+	    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+&1&2&3&4&5&6&7&8&9&10&11&12&13&14&15&16&17&18&19&20&21&22&23&24&25&26&27&28&29&30\\
+\hline
+1&17&0&13&0&0&1&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+2&0&0&21&0&0&0&0&0&0&0&0&0&0&0&0&6&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+3&0&0&34&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+4&0&0&34&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+5&0&0&28&0&1&3&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+6&0&0&0&0&0&34&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+7&0&0&26&0&0&15&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+8&0&0&2&0&0&6&0&26&0&0&0&0&0&0&0&0&0&0&1&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+9&0&0&1&0&0&31&0&0&0&0&0&0&0&0&0&5&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+10&0&0&3&0&0&0&0&0&0&29&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+11&0&0&0&0&0&0&0&0&0&0&33&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+12&0&0&1&0&0&6&0&0&0&0&0&23&0&0&0&2&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+13&0&0&3&0&0&17&0&0&0&0&0&0&16&0&0&1&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+14&0&0&25&0&0&15&0&0&0&0&0&0&0&3&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+15&0&0&13&0&0&9&0&0&0&0&0&0&0&0&11&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+16&0&0&1&0&0&0&0&0&1&0&0&0&0&0&0&27&0&0&1&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+17&0&0&27&0&0&0&0&0&0&0&0&0&0&0&0&3&1&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+18&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&32&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+19&0&0&6&0&0&15&0&0&0&0&0&0&0&0&0&9&0&0&3&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+20&0&0&33&0&0&0&0&0&0&0&0&0&0&0&0&5&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+21&0&0&20&0&0&1&0&0&0&0&0&0&0&0&0&7&0&0&0&0&4&0&0&0&0&0&0&0&0&0\\
+\hline
+22&0&0&9&0&0&2&0&0&0&0&0&0&0&0&0&4&0&0&0&0&0&17&0&0&0&0&0&0&0&0\\
+\hline
+23&0&0&37&0&0&1&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+24&0&0&5&0&0&11&0&0&0&0&0&0&0&0&0&7&0&0&2&0&0&0&0&10&0&0&0&0&0&0\\
+\hline
+25&0&0&3&0&0&23&0&0&0&0&0&0&0&0&0&6&0&0&0&0&0&0&0&0&1&0&0&0&0&0\\
+\hline
+26&0&0&0&0&0&13&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&13&0&0&0&0\\
+\hline
+27&0&0&0&0&0&0&0&0&9&0&0&0&0&0&0&1&0&0&0&0&0&0&0&0&0&0&25&0&0&0\\
+\hline
+28&0&0&16&0&0&1&0&0&0&0&0&0&0&0&0&11&0&0&0&0&0&0&0&0&2&0&0&5&0&0\\
+\hline
+29&0&0&3&0&0&5&0&0&0&0&0&0&0&0&0&10&0&0&0&0&0&0&0&0&0&0&0&0&19&0\\
+\hline
+30&0&0&28&0&0&15&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+\hline
+	    \end{tabular}
+	}
+	\end{center}
+	\caption {La matrice de confusion de la base de données ALOI avec seuil=0.6\\
+	\hspace*{1.7cm}  Première ligne est les noms des classes de base de référence\\
+	\hspace*{1.7cm}  Première colonne est les noms des classes de test}
+\end{table}
+
+\end{document}

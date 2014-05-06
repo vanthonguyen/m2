@@ -1,0 +1,104 @@
+\documentclass[11pt,a4paper,oneside]{report}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amssymb, amsmath} % needed for math
+\usepackage{}               % needed for math
+\usepackage[utf8]{inputenc} % this is needed for umlauts
+\usepackage[francais]{babel} % this is needed for umlauts
+\usepackage{fourier}
+\usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[margin=2.5cm]{geometry} %layout
+\usepackage{hyperref}   % links im text
+\usepackage{enumerate}  % for advanced numbering of lists
+\clubpenalty  = 10000   % Schusterjungen verhindern
+\widowpenalty = 10000   % Hurenkinder verhindern
+\usepackage{fancyhdr}  
+\usepackage{listings}
+
+\lstset{ language=C++,
+% 	captionpos=b,
+ 	tabsize=3,
+ 	frame=lines,
+ 	keywordstyle=\color{blue},
+ 	commentstyle=\color{gray},
+ 	stringstyle=\color{green},
+	extendedchars=true,
+% 	numbers=left,
+ 	numberstyle=\tiny,
+ 	numbersep=5pt,
+ 	breaklines=true,
+ 	showstringspaces=false,
+ 	basicstyle=\footnotesize\ttfamily,
+ 	emph={label},
+ 	inputencoding=utf8,
+ 	extendedchars=true, 	
+ 	  literate=%
+ 	  {é}{{\'{e}}}1
+ 	  {è}{{\`{e}}}1
+ 	  {ê}{{\^{e}}}1
+ 	  {ë}{{\¨{e}}}1
+ 	  {û}{{\^{u}}}1
+ 	  {ù}{{\`{u}}}1
+ 	  {â}{{\^{a}}}1
+ 	  {à}{{\`{a}}}1
+ 	  {î}{{\^{i}}}1
+ 	  {ç}{{\c{c}}}1
+ 	  {Ç}{{\c{C}}}1
+ 	  {É}{{\'{E}}}1
+ 	  {Ê}{{\^{E}}}1
+ 	  {À}{{\`{A}}}1
+ 	  {Â}{{\^{A}}}1
+ 	  {Î}{{\^{I}}}1	
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Change the following lines:                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\yourName{NGUYEN Van Tho}
+\newcommand\yourTitle{ \Large {Institut de la Francophonie pour l'informatique \\ \Huge Vision par Ordinateur\\ \Large 
+TP 1 : Détection de la peau} 
+\newcommand\yourKeywords{}
+\newcommand\yourNumber{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup { 
+  pdfauthor   = {\yourName}, 
+  pdfkeywords = {\yourKeywords}, 
+  pdftitle    = {\yourTitle} 
+}
+
+\pagestyle{fancy}% eigenen Seitestil aktivieren}
+
+\lhead[\thepage]{}      %\thesection Note the different brackets!
+%\rhead[\thesection]{\thechapter}
+
+\lfoot{\yourNumber}
+\cfoot{\thepage}
+\rfoot{\yourName}
+
+\author{\yourName}
+\title{\yourTitle}
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\begin{center}
+\begin{tabular}{l r}
+Encadrement: & NGUYEN Thi Oanh % Instructor/supervisor
+\end{tabular}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Start editing your content here                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Fonctionnement du programme}
+\begin{lstlisting}
+  hello
+\end{lstlisting}
+
+\section{Résultats}
+\section{Réponses aux questions}
+\section{Conclusion}
+
+\end{document}
