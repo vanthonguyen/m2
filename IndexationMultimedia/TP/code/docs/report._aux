@@ -1,0 +1,50 @@
+\relax 
+\catcode`:\active
+\catcode`;\active
+\catcode`!\active
+\catcode`?\active
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\select@language{french}
+\@writefile{toc}{\select@language{french}}
+\@writefile{lof}{\select@language{french}}
+\@writefile{lot}{\select@language{french}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.0.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}M\IeC {\'e}thodes propos\IeC {\'e}es}{2}{section.0.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Pr\IeC {\'e}traitement d'images}{2}{subsection.0.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Extraction de caract\IeC {\'e}ristiques}{2}{subsection.0.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Extraction de caract\IeC {\'e}ristiques par diviser en blocs}{2}{section*.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces D\IeC {\'e}coupage l'ent\IeC {\^e}te d'un document de type 1 en $3\times 10$ morceaux pour obtenir des caract\IeC {\'e}ristiques\relax }}{2}{figure.caption.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Principal component analysis (PCA)}{3}{section*.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Classification}{3}{subsection.0.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Le diagramme interactif pour le processus des images\relax }}{3}{figure.caption.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Cluster}{4}{subsection.0.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces La m\IeC {\'e}thode Kmeans\relax }}{4}{figure.caption.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Exp\IeC {\'e}rimentation}{4}{section.0.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Indicateurs pris en compte pour l\IeC {\textquoteright }\IeC {\'e}valuation des m\IeC {\'e}thodes propos\IeC {\'e}es}{4}{subsection.0.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}M\IeC {\'e}thode d'\IeC {\'e}valuation}{5}{subsection.0.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces M\IeC {\'e}thode 3-fold cross validation utilis\IeC {\'e}e\relax }}{5}{figure.caption.6}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig: 3fold validation}{{4}{5}{Méthode 3-fold cross validation utilisée\relax \relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Exp\IeC {\'e}rimentations}{5}{subsection.0.3.3}}
+\@writefile{toc}{\contentsline {subsubsection}{R\IeC {\'e}sultat}{5}{section*.7}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces 3-fold cross validation avec les valeurs de K entre 8 et 13\relax }}{6}{table.caption.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces 3-fold cross validation avec les valeurs de K entre 8 et 13\relax }}{6}{figure.caption.9}}
+\newlabel{fig: K 8a13}{{5}{6}{3-fold cross validation avec les valeurs de K entre 8 et 13\relax \relax }{figure.caption.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Matrice de confusion avec la m\IeC {\'e}thode divis\IeC {\'e} en blocs + K-means, k = 11\relax }}{7}{table.caption.10}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Matrice de confusion PCA, Kmeans avec k = 11\relax }}{7}{table.caption.11}}
+\@writefile{toc}{\contentsline {subsubsection}{ Analyses}{7}{section*.12}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion et Perspective}{8}{section.0.4}}
